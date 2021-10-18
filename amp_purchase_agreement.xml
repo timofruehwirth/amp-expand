@@ -16,7 +16,7 @@
                         <street>Sensengasse 1</street>
                         <postCode>1090 Vienna</postCode>
                         <placeName>
-                            <country>A</country>
+                            <country>Austria</country>
                             <settlement>Vienna</settlement>
                         </placeName>
                     </address>
@@ -46,11 +46,13 @@
                         <msDesc>
                             <msIdentifier>
                                 <institution>
-                                    <orgName>Bezirksgericht Neulengbach [Neulengbach District Court]</orgName><!-- macht das so Sinn? -->
-                                    <address>
-                                        <country>A</country>
-                                        <region>Lower Austria</region>
+                                    <orgName>Bezirksgericht Neulengbach [Neulengbach District Court]</orgName><!-- or `name` better? -->
+                                    <address><!-- do I need `placeName`somewhere? -->
+                                        <street>Hauptplatz 2</street>
+                                        <postCode>3040</postCode>
                                         <settlement>Neulengbach</settlement>
+                                        <region>Lower Austria</region>
+                                        <country>Austria</country>
                                     </address>
                                 </institution>
                             </msIdentifier>
@@ -77,9 +79,22 @@
             </listChange>    
         </revisionDesc>
     </teiHeader>
-    <text>
-        <body>
-            <p></p>
+    <text type="legal_document"><!-- better value? -->
+        <body><!-- how add additions (stamp, writing) as 2nd layer of text -->
+            <head>K a u f v e r t r a g</head>
+            <p>
+                <lb/>welcher am unten bezeichneten Tage zwischen
+                <lb/>Herrn Dipl.Ing. Erich  Z i m m e r m a n n , Direktor i.R.,
+                <lb/>Wien VIII., Florianigasse 40 als Verkäufer einerseits und
+                <lb/>Herrn Wystan Hugh  A u d e n , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
+                <lb/>New York City, N.Y. sowie
+                <lb/>Herrn Chester Simon  K a l l m a n , 77 St.Marks Place,
+                <lb/>New York City, N.Y.
+                <lb/>die beiden Letzteren vertreten durch Herrn Dr.Walter R e d l i c h,
+                <lb/>Rechtsanwalt in Wien I., Wipplingerstrasse 24,
+                <lb/>als Verkäufer andererseits, vereinbart und abgeschlossen wurde
+                <lb/>wie folgt:
+            </p>
         </body>
     </text>
 </TEI>
