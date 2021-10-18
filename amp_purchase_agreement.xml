@@ -3,23 +3,79 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Kaufvertrag</title>
+                <title>Purchase Agreement regarding estate Kirchstetten, Hinterholz 6, 1957-10-04</title>
                 <author>Gamillschegg, Theodor</author>
-                <editor>Timo Frühwirth</editor>
+                <editor>Frühwirth, Timo</editor>
+                <editor>Mayer, Sandra</editor>
             </titleStmt>
+            <editionStmt>
+                <edition>machine-readable transcription</edition>
+                <funder><!-- `funder` here instead of in `titleStmt' ok?  -->
+                    <name>FWF Austrian Science Fund</name>
+                    <address>
+                        <street>Sensengasse 1</street>
+                        <postCode>1090 Vienna</postCode>
+                        <placeName>
+                            <country>A</country>
+                            <settlement>Vienna</settlement>
+                        </placeName>
+                    </address>
+                </funder>
+                <respStmt>
+                    <resp>transcription and encoding</resp>
+                    <name>Frühwirth, Timo</name>
+                </respStmt>
+            </editionStmt>
             <publicationStmt>
-                <p>Publication Information</p>
+                <publisher>Austrian Centre for Digital Humanities and Cultural Heritage</publisher>
+                <pubPlace>Vienna</pubPlace>
+                <date when="2021">2021</date>
+                <availability>
+                    <licence target="https://creativecommons.org/licenses/by/4.0/deed.en">
+                        <p>You are free to: Share — copy and redistribute the material in any medium or format; adapt — remix, transform, and build upon the material for any purpose, even commercially.</p>
+                        <p>The licensor cannot revoke these freedoms as long as you follow the license terms. Under the following terms:</p>
+                        <p>Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use. No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.</p>
+                        <p>Notices:</p>
+                        <p>You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation. No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</p>
+                    </licence>
+                </availability>
             </publicationStmt>
             <sourceDesc>
-                <p>Source Information</p>
+                <listWit>
+                    <witness n="1">
+                        <msDesc>
+                            <msIdentifier>
+                                <institution>
+                                    <orgName>Bezirksgericht Neulengbach [Neulengbach District Court]</orgName><!-- macht das so Sinn? -->
+                                    <address>
+                                        <country>A</country>
+                                        <region>Lower Austria</region>
+                                        <settlement>Neulengbach</settlement>
+                                    </address>
+                                </institution>
+                            </msIdentifier>
+                            <history>
+                                <origin><origDate when-iso="1957-10-04">1957-10-04</origDate></origin>
+                            </history>
+                        </msDesc>
+                    </witness>
+                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc><p>Project Description</p></projectDesc>
-            <editorialDecl><p>Editorial Declaration</p></editorialDecl>
+            <projectDesc><p></p></projectDesc><!-- add! -->
+            <editorialDecl><p></p></editorialDecl><!-- add! -->
         </encodingDesc>
-        <profileDesc></profileDesc>
-        <revisionDesc><change>Changes or List of Changes</change></revisionDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="de">German</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <listChange>
+                <change who="tfruehwirth">created file</change>
+            </listChange>    
+        </revisionDesc>
     </teiHeader>
     <text>
         <body>
