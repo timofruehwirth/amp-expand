@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Kaufvertrag</title>
+                <author>Gamillschegg, Theodor</author>
+                <editor>Timo Frühwirth</editor>
+            </titleStmt>
+            <publicationStmt>
+                <p>Publication Information</p>
+            </publicationStmt>
+            <sourceDesc>
+                <p>Source Information</p>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc><p>Project Description</p></projectDesc>
+            <editorialDecl><p>Editorial Declaration</p></editorialDecl>
+        </encodingDesc>
+        <profileDesc></profileDesc>
+        <revisionDesc><change>Changes or List of Changes</change></revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <p></p>
+        </body>
+    </text>
+</TEI>
