@@ -80,21 +80,75 @@
         </revisionDesc>
     </teiHeader>
     <text type="legal_document"><!-- better value? -->
-        <body><!-- how add additions (stamp, writing) as 2nd layer of text -->
-            <head>K a u f v e r t r a g</head>
-            <p>
-                <lb/>welcher am unten bezeichneten Tage zwischen
-                <lb/>Herrn Dipl.Ing. Erich  Z i m m e r m a n n , Direktor i.R.,
-                <lb/>Wien VIII., Florianigasse 40 als Verkäufer einerseits und
-                <lb/>Herrn Wystan Hugh  A u d e n , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
-                <lb/>New York City, N.Y. sowie
-                <lb/>Herrn Chester Simon  K a l l m a n , 77 St.Marks Place,
-                <lb/>New York City, N.Y.
-                <lb/>die beiden Letzteren vertreten durch Herrn Dr.Walter R e d l i c h,
-                <lb/>Rechtsanwalt in Wien I., Wipplingerstrasse 24,
-                <lb/>als Verkäufer andererseits, vereinbart und abgeschlossen wurde
-                <lb/>wie folgt:
-            </p>
+        <body>
+            <pb/>
+            <div><!-- how add additions (stamp, writing) as 2nd layer of text -->
+                <p>
+                    <lb/>1994/57
+                </p>
+                <p>
+                    <lb/>Angezeigt am 9.Okt.1957 u.un<unclear></unclear>er B.R.P.
+                    <lb/>92120 verbucht.
+                    <lb/>Finanzamt für Gebühren u.Verkehrsteuern Wien
+                    <lb/>Slattner eh.
+                </p>
+                <p>
+                    <lb/>S 6.-- österr.
+                    <lb/>Stempelmarke
+                </p>
+            </div>
+            <div>
+                <head>K a u f v e r t r a g</head>
+                <p>
+                    <lb/>welcher am unten bezeichneten Tage zwischen
+                    <lb/>Herrn Dipl.Ing. Erich  Z i m m e r m a n n , Direktor i.R.,
+                    <lb/>Wien VIII., Florianigasse 40 als Verkäufer einerseits und
+                    <lb/>Herrn Wystan Hugh  A u d e n , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
+                    <lb/>New York City, N.Y. sowie
+                    <lb/>Herrn Chester Simon  K a l l m a n , 77 St.Marks Place,
+                    <lb/>New York City, N.Y.
+                    <lb/>die beiden Letzteren vertreten durch Herrn Dr.Walter R e d l i c h,
+                    <lb/>Rechtsanwalt in Wien I., Wipplingerstrasse 24,
+                    <lb/>als Verkäufer andererseits, vereinbart und abgeschlossen wurde
+                    <lb/>wie folgt:
+                </p>
+                <p>
+                    <lb/><unclear>I</unclear>.
+                    <lb/>Herr Dipl.Ing. Erich Zimmermann, im Nachstehenden Verkäufer ge-
+                    <lb/>nannt, verkauft und übergibt an die Herren Wystan Hugh Auden und
+                    <lb/>Chester Simon Kallman, im Nachstehenden Käufer genannt, die dem
+                    <lb/>Ersteren gehörige Liegenschaft E.Z. 35 des Grundbuches der Kat.
+                    <lb/>Gemeinde Kirchstetten, Haus Nr. 6 zu Hinterholz mit den Parzellen
+                    <lb/>46 Haus Nr. 6 Hinterholz und 433/1 Garten, mit allen Rechten
+                    <lb/>und Befugnissen, mit welchen der Verkäufer diese Liegenschaft
+            <pb/>
+                    <lb/>bisher besessen und benützt hat bzw. zu besitzen und benützen be-
+                    <lb/>rechtigt war, um den vereinbarten Betrag von S 217.700.-- ( in
+                    <lb/>Worten: Schilling zweihundertsiebzehntausendsiebenhundert).
+                </p>
+                <p>
+                    <lb/>2.
+                    <lb/>Die Käufer haben bei Unterfertigung dieses Kaufvertrages einen
+                    <lb/>Teilbetrag von S <del><unclear></unclear></del>102.450.- (in Worten: <del>Schilling</del>Schilling <del><unclear></unclear></del>hundertzwei-
+                    <lb/><del><unclear></unclear></del>tausendvierhundertfünfzig) angezahlt, worüber hiemit per contract<unclear></unclear>
+                    <lb/>quittiert wird. Der sohin verbleibende Restbetrag von <del><unclear></unclear></del>115.250.-
+                    <lb/>(in Worten: <del>Schilling</del>Schilling <del><unclear></unclear></del>hundertfünfzehntausendzweihundertfünfzig)
+                    <lb/>ist nach grundbücherlicher Einverleibung des Eigentumsrechtes
+                    <lb/>der Käufer zur Zahlung fällig.
+                </p>
+                <p>
+                    <lb/>3.
+                    <lb/>Die Uebergabe und Uebernahme des gesamten Kaufobjektes in den
+                    <lb/>physischen Besitz und Genuss der Käufer erfolgt symbolisch mit
+                    <lb/>der Unterfertigung dieses Kaufvertrages. Die Gefahr und der Zu-
+                    <lb/>fall sowie die Nutzungen und Lasten gehen mit dem Tage der
+                    <lb/>grundbücherlichen Einverleibung des Eigentumsrechtes auf die
+                    <lb/>Käufer über.
+                    <lb/>Der Verkäufer behält sich jedoch das Recht vor, die verkaufte
+                    <lb/>Liegenschaft bis 6.1.1958 zu benützen, ohne dass er hiefür ein
+                    <lb/>Entgelt zu leisten hätte.
+                </p>
+            </div>
         </body>
     </text>
 </TEI>
