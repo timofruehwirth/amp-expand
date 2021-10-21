@@ -3,18 +3,20 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Purchase Agreement regarding estate Kirchstetten, Hinterholz 6, 1957-10-04</title>
+                <title>Purchase Agreement regarding real estate Kirchstetten, Hinterholz 6, 1957-10-04</title>
                 <author>Gamillschegg, Theodor</author>
-                <editor>Frühwirth, Timo</editor>
-                <editor>Mayer, Sandra</editor>
+                <editor>
+                    <name>Frühwirth, Timo</name>
+                    <name>Mayer, Sandra</name>
+                </editor>
             </titleStmt>
             <editionStmt>
-                <edition>machine-readable transcription</edition>
-                <funder><!-- `funder` here instead of in `titleStmt' ok?  -->
-                    <name>FWF Austrian Science Fund</name>
+                <edition>machine-readable edition</edition><!-- useful information? -->
+                <funder><!-- `funder` here better/worse than in `titleStmt`? -->
+                    <orgName>FWF Austrian Science Fund</orgName><!-- `orgName` better/worse than `name`? -->
                     <address>
                         <street>Sensengasse 1</street>
-                        <postCode>1090 Vienna</postCode>
+                        <postCode>1090</postCode><!-- better without 'Vienna'? -->
                         <placeName>
                             <country>Austria</country>
                             <settlement>Vienna</settlement>
@@ -45,19 +47,21 @@
                     <witness n="1">
                         <msDesc>
                             <msIdentifier>
-                                <institution>
+                                <institution><!-- instead of repository/collection/idno ... -->
                                     <orgName>Bezirksgericht Neulengbach [Neulengbach District Court]</orgName><!-- or `name` better? -->
-                                    <address><!-- do I need `placeName`somewhere? -->
+                                    <address>
                                         <street>Hauptplatz 2</street>
                                         <postCode>3040</postCode>
-                                        <settlement>Neulengbach</settlement>
-                                        <region>Lower Austria</region>
-                                        <country>Austria</country>
+                                        <placeName><!-- `placeName` this way useful? -->
+                                            <settlement>Neulengbach</settlement>
+                                            <region>Lower Austria</region>
+                                            <country>Austria</country>
+                                        </placeName>
                                     </address>
                                 </institution>
                             </msIdentifier>
                             <history>
-                                <origin><origDate when-iso="1957-10-04">1957-10-04</origDate></origin>
+                                <origin><origDate when-iso="1957-10-04">1957-10-04</origDate></origin><!-- do I need pcdata when data are already included as value? -->
                             </history>
                         </msDesc>
                     </witness>
@@ -65,8 +69,8 @@
             </sourceDesc>
         </fileDesc>
         <encodingDesc>
-            <projectDesc><p></p></projectDesc><!-- add! -->
-            <editorialDecl><p></p></editorialDecl><!-- add! -->
+            <projectDesc><p></p></projectDesc><!-- TO BE ADDED! -->
+            <editorialDecl><p></p></editorialDecl><!-- TO BE ADDED -->
         </encodingDesc>
         <profileDesc>
             <langUsage>
@@ -84,10 +88,10 @@
             <pb n="1"/>
               <div><!-- how add additions (stamp, writing) as 2nd layer of text -->
                   <p>
-                      <lb/>1994/57
+                      <lb/>1994/57<!-- encode as stamp -->
                   </p>
                   <p>
-                      <lb/>Angezeigt am 9.Okt.1957 u.un<unclear></unclear>er B.R.P.
+                      <lb/>Angezeigt am 9.Okt.1957 u.un<unclear></unclear>er B.R.P.<!-- encode different typefaces -->
                       <lb/>92120 verbucht.
                       <lb/>Finanzamt für Gebühren u.Verkehrsteuern Wien
                       <lb/>Slattner eh.
@@ -205,8 +209,47 @@
                        <lb/>Stempelmarke S 6.-
                    </p>
                    <p>
-                       Beurk.Reg.Zahl:629/1957
+                       <lb/>Beurk.Reg.Zahl:629/1957
                    </p>
+                   <p>
+                       <lb/>Ich bestätige die Echtheit der Unterschrift vorstehenden des
+                       <lb/>Herrn Dipl.Ing.Erich Zimmermann,Direktor in Ruhe in Wien,VIII.
+                       <lb/>Florianigasse 46------------------------.-.-.-.-.-.-.-.-.-.-.
+                       <lb/>Wien,am vierten Oktober Eintausendneunhundert<unclear>si</unclear>ebenundfünfzig.- <unclear>- -</unclear>
+                       <lb/>Leg.Geb.+ Stpl.u.Ums.St.zus.S 141.50
+                   </p>
+                   <p>
+                       <lb/>Dr.Theodor Gamillschegg eh
+                       <lb/>öffentl.Notar
+                   </p>
+                   <p>
+                       <lb/>Rundsiegel:
+                       <lb/>Dr.Theodor Gamillschegg
+                       <lb/>öffentlicher Notar
+                       <lb/>Wien-Innere Stadt
+                   </p>
+                   <p>
+                       <lb/>Zahl IX/GV-1137/2
+                       <lb/>Die Uebertragung des Eigentums wird
+                       <lb/>zugelassen.
+                       <lb/>Grundverkehrs-Bezirkskommission Neulen<unclear>g</unclear>
+                       <lb/>am 23.Nove.1957
+                   </p>
+                   <p>
+                       <lb/>Der Vorsitzende:<!-- how encode spatial disposition? -->
+                       <lb/>L.S. Unterschrift eh.<!-- how encode spatial disposition? -->
+                   </p>
+                </div>
+                <div>
+                   <p>
+                       <lb/>Dem am 1.=<unclear></unclear> mit
+                       <lb/>= 6 S =g <unclear></unclear> Originale
+                       <lb/>gleichlautend.
+                   </p>
+                   <p>
+                       <lb/>Bezirksgericht Neulengbach
+                       <lb/>Geschäftsabteilung:  , am 18 <unclear>Dez.</unclear> 1957
+                   </p><!-- encode Bezirksgericht Neulengbach stamp -->
                 </div>
         </body>
     </text>
