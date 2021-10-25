@@ -76,6 +76,21 @@
             <langUsage>
                 <language ident="de">German</language>
             </langUsage>
+            <particDesc><!-- this part useful/suitable for a stand-alone tei file? -->
+                <listPerson>
+                    <person xml:id="whauden">
+                        <persName ref="http://d-nb.info/gnd/118650963">
+                            <forename>
+                                <choice><abbr type="initial">W.</abbr><expan>Wystan</expan></choice></forename><!-- good way to tag abbreviated forenames? -->
+                            <forename>
+                                <choice><abbr type="initial">H.</abbr><expan>Hugh</expan></choice></forename>
+                            <surname>Auden</surname>
+                        </persName>
+                        <birth when="1907-02-21">21 Feb. 1907</birth>
+                        <death when="1973-09-29">29 Sep. 1973</death>
+                    </person>
+                </listPerson>
+            </particDesc>
         </profileDesc>
         <revisionDesc>
             <listChange>
@@ -107,7 +122,7 @@
                       <lb/>welcher am unten bezeichneten Tage zwischen
                       <lb/>Herrn Dipl.Ing. Erich  Z i m m e r m a n n , Direktor i.R.,
                       <lb/>Wien VIII., Florianigasse 40 als Verkäufer einerseits und
-                      <lb/>Herrn Wystan Hugh  A u d e n , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
+                      <lb/>Herrn <rs type="person" ref="#whauden">Wystan Hugh  A u d e n</rs> , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
                       <lb/>New York City, N.Y. sowie
                       <lb/>Herrn Chester Simon  K a l l m a n , 77 St.Marks Place,
                       <lb/>New York City, N.Y.
