@@ -78,16 +78,31 @@
             </langUsage>
             <particDesc><!-- this part useful/suitable for a stand-alone tei file? -->
                 <listPerson>
+                    <person xml:id="cskallman">
+                        <persName ref="http://d-nb.info/gnd/119544911">
+                            <forename type="first">Chester</forename>
+                            <forename type="middle">Simon</forename>
+                            <surname>Kallman</surname>
+                        </persName>
+                        <birth when="1921-01-07">7 Jan. 1921</birth>
+                        <death when="1975-01-18">18 Jan. 1975</death>
+                    </person>
                     <person xml:id="whauden">
                         <persName ref="http://d-nb.info/gnd/118650963">
-                            <forename>
-                                <choice><abbr type="initial">W.</abbr><expan>Wystan</expan></choice></forename><!-- good way to tag abbreviated forenames? -->
-                            <forename>
-                                <choice><abbr type="initial">H.</abbr><expan>Hugh</expan></choice></forename>
+                            <forename type="first">Wystan</forename><!-- no tagging abbreviated forenames here? -->
+                            <forename type="middle">Hugh</forename>
                             <surname>Auden</surname>
                         </persName>
                         <birth when="1907-02-21">21 Feb. 1907</birth>
                         <death when="1973-09-29">29 Sep. 1973</death>
+                    </person>
+                    <person xml:id="wredlich">
+                        <persName>
+                            <roleName type ="honorific">Dr.</roleName>
+                            <forename>Walter</forename>
+                            <surname>Redlich</surname>
+                        </persName>
+                        <occupation>lawyer</occupation>
                     </person>
                 </listPerson>
             </particDesc>
@@ -124,9 +139,9 @@
                       <lb/>Wien VIII., Florianigasse 40 als Verkäufer einerseits und
                       <lb/>Herrn <rs type="person" ref="#whauden">Wystan Hugh  A u d e n</rs> , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
                       <lb/>New York City, N.Y. sowie
-                      <lb/>Herrn Chester Simon  K a l l m a n , 77 St.Marks Place,
+                      <lb/>Herrn <rs type="person" ref="#cskallman">Chester Simon  K a l l m a n</rs> , 77 St.Marks Place,
                       <lb/>New York City, N.Y.
-                      <lb/>die beiden Letzteren vertreten durch Herrn Dr.Walter R e d l i c h,
+                      <lb/>die <rs type="person" ref="#cskallman #whauden">beiden Letzteren</rs> vertreten durch Herrn Dr.Walter R e d l i c h,
                       <lb/>Rechtsanwalt in Wien I., Wipplingerstrasse 24,
                       <lb/>als Verkäufer andererseits, vereinbart und abgeschlossen wurde
                       <lb/>wie folgt:
@@ -134,8 +149,8 @@
                   <p>
                       <lb/><unclear>I</unclear>.
                       <lb/>Herr Dipl.Ing. Erich Zimmermann, im Nachstehenden Verkäufer ge-
-                      <lb/>nannt, verkauft und übergibt an die Herren Wystan Hugh Auden und
-                      <lb/>Chester Simon Kallman, im Nachstehenden Käufer genannt, die dem
+                      <lb/>nannt, verkauft und übergibt an die Herren <rs type="person" ref="#whauden">Wystan Hugh Auden</rs> und
+                      <lb/><rs type="person" ref="#cskallman">Chester Simon Kallman</rs>, im Nachstehenden Käufer genannt, die dem
                       <lb/>Ersteren gehörige Liegenschaft E.Z. 35 des Grundbuches der Kat.
                       <lb/>Gemeinde Kirchstetten, Haus Nr. 6 zu Hinterholz mit den Parzellen
                       <lb/>46 Haus Nr. 6 Hinterholz und 433/1 Garten, mit allen Rechten
@@ -197,7 +212,7 @@
                        <lb/>ihm gehörigen Liegenschaft E.Z. 35 des Grundbuches der Kat.Ge-
                        <lb/>meinde Kirchstetten, Haus Nr. 6 zu Hinterholz mit den Parzellen
                        <lb/>46 Haus Nr. 6 Hinterholz und 433/1 Garten, das Eigentumsrecht
-                       <lb/>für Wystan Hugh Auden und Chester Simon Kallman je zur Hälfte
+                       <lb/>für <rs type="person" ref="#whauden">Wystan Hugh Auden</rs> und <rs type="person" ref="#cskallman">Chester Simon Kallman</rs> je zur Hälfte
                        <lb/>einverleibt werde.
                    </p>
             <pb n="4"/>
@@ -216,9 +231,9 @@
                    </p>
                    <p>
                        <lb/>Dr.Walter Redlich
-                       <lb/>als Vollmachtsträger des Herrn Wystan
-                       <lb/>Hugh Auden u.des Herrn Chester Simon
-                       <lb/>Kallman eh.
+                       <lb/>als Vollmachtsträger des Herrn <rs type="person" ref="#whauden">Wystan
+                           <lb/>Hugh Auden</rs> u.des Herrn <rs type="person" ref="#cskallman">Chester Simon
+                       <lb/>Kallman</rs> eh.
                    </p>
                    <p>
                        <lb/>Stempelmarke S 6.-
