@@ -84,8 +84,32 @@
                             <forename type="middle">Simon</forename>
                             <surname>Kallman</surname>
                         </persName>
+                        <residence><!-- can i reference to place id within tei header? -->
+                            <address>
+                                <street>77 St. Mark's Place</street>
+                                <settlement>New York City</settlement>
+                                <region type="state">New York</region>
+                                <country key="US">United States of America</country>
+                            </address>
+                        </residence>
                         <birth when="1921-01-07">7 Jan. 1921</birth>
                         <death when="1975-01-18">18 Jan. 1975</death>
+                    </person>
+                    <person xml:id="ezimmermann">
+                        <persName>
+                            <roleName type="honorific">Dipl.-Ing.</roleName>
+                            <forename>Erich</forename>
+                            <surname>Zimmermann</surname>
+                        </persName>
+                        <occupation>retired director</occupation>
+                    </person>
+                    <person xml:id="tgamillschegg">
+                        <persName>
+                            <roleName type="honorific">Dr.</roleName>
+                            <forename>Theodor</forename>
+                            <surname>Gamillschegg</surname>
+                        </persName>
+                        <occupation>notary public</occupation>
                     </person>
                     <person xml:id="whauden">
                         <persName ref="http://d-nb.info/gnd/118650963">
@@ -98,7 +122,7 @@
                     </person>
                     <person xml:id="wredlich">
                         <persName>
-                            <roleName type ="honorific">Dr.</roleName>
+                            <roleName type="honorific">Dr.</roleName>
                             <forename>Walter</forename>
                             <surname>Redlich</surname>
                         </persName>
@@ -106,6 +130,15 @@
                     </person>
                 </listPerson>
             </particDesc>
+            <settingDesc>
+                <listPlace>
+                    <place xml:id="kirchstetten">
+                        <placeName>
+                            <settlement ref="https://www.geonames.org/7871886">Kirchstetten</settlement>
+                        </placeName>
+                    </place>
+                </listPlace>
+            </settingDesc>
         </profileDesc>
         <revisionDesc>
             <listChange>
@@ -135,26 +168,26 @@
                   <head>K a u f v e r t r a g</head>
                   <p>
                       <lb/>welcher am unten bezeichneten Tage zwischen
-                      <lb/>Herrn Dipl.Ing. Erich  Z i m m e r m a n n , Direktor i.R.,
-                      <lb/>Wien VIII., Florianigasse 40 als Verkäufer einerseits und
+                      <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich  Z i m m e r m a n n</rs> , Direktor i.R.,
+                      <lb/>Wien VIII., Florianigasse 40 als <rs type="person" ref="#ezimmermann">Verkäufer</rs> einerseits und
                       <lb/>Herrn <rs type="person" ref="#whauden">Wystan Hugh  A u d e n</rs> , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
                       <lb/>New York City, N.Y. sowie
                       <lb/>Herrn <rs type="person" ref="#cskallman">Chester Simon  K a l l m a n</rs> , 77 St.Marks Place,
                       <lb/>New York City, N.Y.
-                      <lb/>die <rs type="person" ref="#cskallman #whauden">beiden Letzteren</rs> vertreten durch Herrn Dr.Walter R e d l i c h,
+                      <lb/>die <rs type="person" ref="#cskallman #whauden">beiden Letzteren</rs> vertreten durch Herrn <rs type="person" ref="#wredlich">Dr.Walter R e d l i c h</rs>,
                       <lb/>Rechtsanwalt in Wien I., Wipplingerstrasse 24,
-                      <lb/>als Verkäufer andererseits, vereinbart und abgeschlossen wurde
+                      <lb/>als <rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note>This should read 'Käufer'.</note> andererseits, vereinbart und abgeschlossen wurde
                       <lb/>wie folgt:
                   </p>
                   <p>
                       <lb/><unclear>I</unclear>.
-                      <lb/>Herr Dipl.Ing. Erich Zimmermann, im Nachstehenden Verkäufer ge-
+                      <lb/>Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>, im Nachstehenden <rs type="person" ref="#ezimmermann">Verkäufer</rs> ge-
                       <lb/>nannt, verkauft und übergibt an die Herren <rs type="person" ref="#whauden">Wystan Hugh Auden</rs> und
-                      <lb/><rs type="person" ref="#cskallman">Chester Simon Kallman</rs>, im Nachstehenden Käufer genannt, die dem
-                      <lb/>Ersteren gehörige Liegenschaft E.Z. 35 des Grundbuches der Kat.
+                      <lb/><rs type="person" ref="#cskallman">Chester Simon Kallman</rs>, im Nachstehenden <rs type="person" ref="#cskallman #whauden">Käufer</rs> genannt, die dem
+                      <lb/><rs type="person" ref="#ezimmermann">Ersteren</rs> gehörige Liegenschaft E.Z. 35 des Grundbuches der Kat.
                       <lb/>Gemeinde Kirchstetten, Haus Nr. 6 zu Hinterholz mit den Parzellen
                       <lb/>46 Haus Nr. 6 Hinterholz und 433/1 Garten, mit allen Rechten
-                      <lb/>und Befugnissen, mit welchen der Verkäufer diese Liegenschaft
+                      <lb/>und Befugnissen, mit welchen der <rs type="person" ref="#ezimmermann">Verkäufer</rs> diese Liegenschaft
             <pb n="2"/>
                        <lb/>bisher besessen und benützt hat bzw. zu besitzen und benützen be-
                        <lb/>rechtigt war, um den vereinbarten Betrag von S 217.700.-- ( in
@@ -162,40 +195,40 @@
                    </p>
                    <p>
                        <lb/>2.
-                       <lb/>Die Käufer haben bei Unterfertigung dieses Kaufvertrages einen
+                       <lb/>Die <rs type="person" ref="#cskallman #whauden">Käufer</rs> haben bei Unterfertigung dieses Kaufvertrages einen
                        <lb/>Teilbetrag von S <del><unclear></unclear></del>102.450.- (in Worten: <del>Schilling</del>Schilling <del><unclear></unclear></del>hundertzwei-
                        <lb/><del><unclear></unclear></del>tausendvierhundertfünfzig) angezahlt, worüber hiemit per contract<unclear></unclear>
                        <lb/>quittiert wird. Der sohin verbleibende Restbetrag von <del><unclear></unclear></del>115.250.-
                        <lb/>(in Worten: <del>Schilling</del>Schilling <del><unclear></unclear></del>hundertfünfzehntausendzweihundertfünfzig)
                        <lb/>ist nach grundbücherlicher Einverleibung des Eigentumsrechtes
-                       <lb/>der Käufer zur Zahlung fällig.
+                       <lb/>der <rs type="person" ref="#cskallman #whauden">Käufer</rs> zur Zahlung fällig.
                    </p>
                    <p>
                        <lb/>3.
                        <lb/>Die Uebergabe und Uebernahme des gesamten Kaufobjektes in den
-                       <lb/>physischen Besitz und Genuss der Käufer erfolgt symbolisch mit
+                       <lb/>physischen Besitz und Genuss der <rs type="person" ref="#cskallman #whauden">Käufer</rs> erfolgt symbolisch mit
                        <lb/>der Unterfertigung dieses Kaufvertrages. Die Gefahr und der Zu-
                        <lb/>fall sowie die Nutzungen und Lasten gehen mit dem Tage der
                        <lb/>grundbücherlichen Einverleibung des Eigentumsrechtes auf die
-                       <lb/>Käufer über.
-                       <lb/>Der Verkäufer behält sich jedoch das Recht vor, die verkaufte
-                       <lb/>Liegenschaft bis 6.1.1958 zu benützen, ohne dass er hiefür ein
+                       <lb/><rs type="person" ref="#cskallman #whauden">Käufer</rs> über.
+                       <lb/>Der <rs type="person" ref="#ezimmermann">Verkäufer</rs> behält sich jedoch das Recht vor, die verkaufte
+                       <lb/>Liegenschaft bis 6.1.1958 zu benützen, ohne dass <rs type="person" ref="#ezimmermann">er</rs> hiefür ein
                        <lb/>Entgelt zu leisten hätte.
                    </p>
                    <p>
                        <lb/>4.
-                       <lb/>Der Verkäufer übernimmt keine Haftung für ein bestimmtes <unclear>Au</unclear>s-
+                       <lb/>Der <rs type="person" ref="#ezimmermann">Verkäufer</rs> übernimmt keine Haftung für ein bestimmtes <unclear>Au</unclear>s-
             <pb n="3"/>
                        <lb/>mass, eine bestimmte Beschaffenheit oder ein besonderes Erträgnis
                        <lb/>der kaufgegenständlichen Liegenschaft,wohl aber dafür, dass die
                        <lb/>verkaufte Liegenschaft vollkommen satz- und lastenfrei in das
-                       <lb/>Eigentum der Käufer übergeht und dass auch keine wie immer Namen
+                       <lb/>Eigentum der <rs type="person" ref="#cskallman #whauden">Käufer</rs> übergeht und dass auch keine wie immer Namen
                        <lb/>habenden, ein gesetzliches Pfandrecht geniessenden öffentlichen
-                       <lb/>Abgaben im Rückstand sind. Der Verkäufer haftet weiters dafür,
+                       <lb/>Abgaben im Rückstand sind. Der <rs type="person" ref="#ezimmermann">Verkäufer</rs> haftet weiters dafür,
                        <lb/>dass keinerlei Rechte geltend gemacht werden können, die kraft
                        <lb/>Gesetzes auch dem Dritten gegenüber wirksam werden und welche
-                       <lb/>nicht im Grundbuch eingetragen sind (Grundsteuern etc.). Der Ver-
-                       <lb/>käufer haftet weiters dafür, dass bezüglich der Liegenschaft keiner-
+                       <lb/>nicht im Grundbuch eingetragen sind (Grundsteuern etc.). Der <rs type="person" ref="#ezimmermann">Ver-
+                       <lb/>käufer</rs> haftet weiters dafür, dass bezüglich der Liegenschaft keiner-
                        <lb/>lei Pachtvertrag besteht.
                    </p>
                    <p>
@@ -206,9 +239,9 @@
                    </p>
                    <p>
                        <lb/>6.
-                       <lb/>Sohin erteilt der Verkäufer, Herr Dipl.Ing. Erich Zimmermann
-                       <lb/>seine ausdrückliche Zustimmung, dass auf Grund dieses Kauf-
-                       <lb/>vertrages ohne sein weiteres Wissen und Einvernehmen auf der
+                       <lb/>Sohin erteilt der <rs type="person" ref="#ezimmermann">Verkäufer</rs>, Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>
+                       <lb/><rs type="person" ref="#ezimmermann">seine</rs> ausdrückliche Zustimmung, dass auf Grund dieses Kauf-
+                       <lb/>vertrages ohne <rs type="person" ref="#ezimmermann">sein</rs> weiteres Wissen und Einvernehmen auf der
                        <lb/>ihm gehörigen Liegenschaft E.Z. 35 des Grundbuches der Kat.Ge-
                        <lb/>meinde Kirchstetten, Haus Nr. 6 zu Hinterholz mit den Parzellen
                        <lb/>46 Haus Nr. 6 Hinterholz und 433/1 Garten, das Eigentumsrecht
@@ -221,16 +254,16 @@
                        <lb/>Die mit der Errichtung und Vergebührung sowie grundbücherlichen
                        <lb/>Durchf<del><unclear></unclear></del>ührung dieses Kaufvertrages verb<del><unclear></unclear></del>undenen Kosten und Gebühr<unclear>en</unclear>
                        <lb/>einschliesslich der Grunderwerbsteuer samt allen Zuschlägen, so-
-                       <lb/>wie die Gerichts- und Eintragungsgebühren tragen die Käufer allei
+                       <lb/>wie die Gerichts- und Eintragungsgebühren tragen die <rs type="person" ref="#cskallman #whauden">Käufer</rs> allei
                    </p>
                    <p>
                        <lb/>Wien, am  4.Oktober 1957
                    </p>
                    <p>
-                       <lb/>Dipl.Ing.Erich Zimmermann <unclear>eh</unclear>
+                       <lb/><rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs> <unclear>eh</unclear>
                    </p>
                    <p>
-                       <lb/>Dr.Walter Redlich
+                       <lb/><rs type="person" ref="#wredlich">Dr.Walter Redlich</rs>
                        <lb/>als Vollmachtsträger des Herrn <rs type="person" ref="#whauden">Wystan
                            <lb/>Hugh Auden</rs> u.des Herrn <rs type="person" ref="#cskallman">Chester Simon
                        <lb/>Kallman</rs> eh.
@@ -243,18 +276,18 @@
                    </p>
                    <p>
                        <lb/>Ich bestätige die Echtheit der Unterschrift vorstehenden des
-                       <lb/>Herrn Dipl.Ing.Erich Zimmermann,Direktor in Ruhe in Wien,VIII.
+                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs>,Direktor in Ruhe in Wien,VIII.
                        <lb/>Florianigasse 46------------------------.-.-.-.-.-.-.-.-.-.-.
                        <lb/>Wien,am vierten Oktober Eintausendneunhundert<unclear>si</unclear>ebenundfünfzig.- <unclear>- -</unclear>
                        <lb/>Leg.Geb.+ Stpl.u.Ums.St.zus.S 141.50
                    </p>
                    <p>
-                       <lb/>Dr.Theodor Gamillschegg eh
+                       <lb/><rs type="person" ref="#tgamillschegg">Dr.Theodor Gamillschegg</rs> eh
                        <lb/>öffentl.Notar
                    </p>
                    <p>
                        <lb/>Rundsiegel:
-                       <lb/>Dr.Theodor Gamillschegg
+                       <lb/><rs type="person" ref="#tgamillschegg">Dr.Theodor Gamillschegg</rs>
                        <lb/>öffentlicher Notar
                        <lb/>Wien-Innere Stadt
                    </p>
