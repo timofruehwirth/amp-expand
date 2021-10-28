@@ -132,10 +132,31 @@
             </particDesc>
             <settingDesc>
                 <listPlace>
-                    <place xml:id="kirchstetten">
-                        <placeName>
-                            <settlement ref="https://www.geonames.org/7871886">Kirchstetten</settlement>
-                        </placeName>
+                    <place xml:id="hinterholz">
+                        <placeName notAfter-iso="1967">Hinterholz 6, Kirchstetten</placeName>
+                        <placeName notBefore-iso="1967">Audenstraße 6, Kirchstetten</placeName>
+                        <location>
+                            <address>
+                                <street>Hinterholz 6</street>
+                                <street>Audenstraße 6</street><!-- i would like to keep both ... how encode relationship between them? -->
+                                <postCode>3062</postCode>
+                                <settlement ref="https://www.geonames.org/7871886">Kirchstetten</settlement>
+                                <region type="province">Lower Austria</region>
+                                <country key="AT">Austria</country>
+                            </address>
+                        </location>
+                    </place>
+                    <place xml:id="stmarksplace">
+                        <placeName>77 St. Mark's Place, New York City</placeName>
+                        <location>
+                            <address>
+                                <street>77 St. Mark's Place</street>
+                                <settlement>New York City</settlement>
+                                <region type="state">New York</region>
+                                <postCode>10003</postCode>
+                                <country key="US">United States of America</country>
+                            </address>
+                        </location>
                     </place>
                 </listPlace>
             </settingDesc>
@@ -170,10 +191,10 @@
                       <lb/>welcher am unten bezeichneten Tage zwischen
                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich  Z i m m e r m a n n</rs> , Direktor i.R.,
                       <lb/>Wien VIII., Florianigasse 40 als <rs type="person" ref="#ezimmermann">Verkäufer</rs> einerseits und
-                      <lb/>Herrn <rs type="person" ref="#whauden">Wystan Hugh  A u d e n</rs> , Professor in 77 St.Marks <unclear reason="illegible">P</unclear>lace,
-                      <lb/>New York City, N.Y. sowie
-                      <lb/>Herrn <rs type="person" ref="#cskallman">Chester Simon  K a l l m a n</rs> , 77 St.Marks Place,
-                      <lb/>New York City, N.Y.
+                      <lb/>Herrn <rs type="person" ref="#whauden">Wystan Hugh  A u d e n</rs> , Professor in <rs type="place" ref="#stmarksplace">77 St.Marks <unclear reason="illegible">P</unclear>lace,
+                      <lb/>New York City, N.Y.</rs> sowie
+                      <lb/>Herrn <rs type="person" ref="#cskallman">Chester Simon  K a l l m a n</rs> , <rs type="place" ref="#stmarksplace">77 St.Marks Place,
+                      <lb/>New York City, N.Y.</rs>
                       <lb/>die <rs type="person" ref="#cskallman #whauden">beiden Letzteren</rs> vertreten durch Herrn <rs type="person" ref="#wredlich">Dr.Walter R e d l i c h</rs>,
                       <lb/>Rechtsanwalt in Wien I., Wipplingerstrasse 24,
                       <lb/>als <rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note>This should read 'Käufer'.</note> andererseits, vereinbart und abgeschlossen wurde
@@ -184,8 +205,8 @@
                       <lb/>Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>, im Nachstehenden <rs type="person" ref="#ezimmermann">Verkäufer</rs> ge-
                       <lb/>nannt, verkauft und übergibt an die Herren <rs type="person" ref="#whauden">Wystan Hugh Auden</rs> und
                       <lb/><rs type="person" ref="#cskallman">Chester Simon Kallman</rs>, im Nachstehenden <rs type="person" ref="#cskallman #whauden">Käufer</rs> genannt, die dem
-                      <lb/><rs type="person" ref="#ezimmermann">Ersteren</rs> gehörige Liegenschaft E.Z. 35 des Grundbuches der Kat.
-                      <lb/>Gemeinde Kirchstetten, Haus Nr. 6 zu Hinterholz mit den Parzellen
+                      <lb/><rs type="person" ref="#ezimmermann">Ersteren</rs> gehörige Liegenschaft <rs type="place" ref="#hinterholz">E.Z. 35 des Grundbuches der Kat.
+                      <lb/>Gemeinde Kirchstetten, Haus Nr. 6 zu Hinterholz</rs> mit den Parzellen
                       <lb/>46 Haus Nr. 6 Hinterholz und 433/1 Garten, mit allen Rechten
                       <lb/>und Befugnissen, mit welchen der <rs type="person" ref="#ezimmermann">Verkäufer</rs> diese Liegenschaft
             <pb n="2"/>
@@ -242,8 +263,8 @@
                        <lb/>Sohin erteilt der <rs type="person" ref="#ezimmermann">Verkäufer</rs>, Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>
                        <lb/><rs type="person" ref="#ezimmermann">seine</rs> ausdrückliche Zustimmung, dass auf Grund dieses Kauf-
                        <lb/>vertrages ohne <rs type="person" ref="#ezimmermann">sein</rs> weiteres Wissen und Einvernehmen auf der
-                       <lb/>ihm gehörigen Liegenschaft E.Z. 35 des Grundbuches der Kat.Ge-
-                       <lb/>meinde Kirchstetten, Haus Nr. 6 zu Hinterholz mit den Parzellen
+                       <lb/>ihm gehörigen Liegenschaft <rs type="place" ref="#hinterholz">E.Z. 35 des Grundbuches der Kat.Ge-
+                       <lb/>meinde Kirchstetten, Haus Nr. 6 zu Hinterholz</rs> mit den Parzellen
                        <lb/>46 Haus Nr. 6 Hinterholz und 433/1 Garten, das Eigentumsrecht
                        <lb/>für <rs type="person" ref="#whauden">Wystan Hugh Auden</rs> und <rs type="person" ref="#cskallman">Chester Simon Kallman</rs> je zur Hälfte
                        <lb/>einverleibt werde.
