@@ -141,7 +141,7 @@
                                 <street>Audenstraße 6</street><!-- i would like to keep both ... how encode relationship between them? -->
                                 <postCode>3062</postCode>
                                 <settlement ref="https://www.geonames.org/7871886">Kirchstetten</settlement>
-                                <region type="province">Lower Austria</region>
+                                <region type="state">Lower Austria</region>
                                 <country key="AT">Austria</country>
                             </address>
                         </location>
