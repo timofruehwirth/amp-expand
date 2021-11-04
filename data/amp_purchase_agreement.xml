@@ -170,7 +170,7 @@
     <text type="legal_document"><!-- better value? -->
         <body>
             <pb n="1"/>
-              <div><!-- how add additions (stamp, writing) as 2nd layer of text -->
+              <div><!-- how add additions (stamp, writing) as 2nd layer of text? work with div1 etc numbered division? -->
                   <p>
                       <lb/>1994/57<!-- encode as stamp -->
                   </p>
