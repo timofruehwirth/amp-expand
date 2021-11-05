@@ -84,14 +84,7 @@
                             <forename type="middle">Simon</forename>
                             <surname>Kallman</surname>
                         </persName>
-                        <residence><!-- can i reference to place id within tei header? -->
-                            <address>
-                                <street>77 St. Mark's Place</street>
-                                <settlement>New York City</settlement>
-                                <region type="state">New York</region>
-                                <country key="US">United States of America</country>
-                            </address>
-                        </residence>
+                        <residence ref="#stmarksplace"/>
                         <birth when="1921-01-07">7 Jan. 1921</birth>
                         <death when="1975-01-18">18 Jan. 1975</death>
                     </person>
@@ -101,6 +94,8 @@
                             <forename>Erich</forename>
                             <surname>Zimmermann</surname>
                         </persName>
+                        <residence type="primary" ref="#florianigasse"/>
+                        <residence type="secondary" ref="#hinterholz"/>
                         <occupation>retired director</occupation>
                     </person>
                     <person xml:id="tgamillschegg">
@@ -117,6 +112,7 @@
                             <forename type="middle">Hugh</forename>
                             <surname>Auden</surname>
                         </persName>
+                        <residence ref="#stmarksplace"/>
                         <birth when="1907-02-21">21 Feb. 1907</birth>
                         <death when="1973-09-29">29 Sep. 1973</death>
                     </person>
@@ -126,23 +122,37 @@
                             <forename>Walter</forename>
                             <surname>Redlich</surname>
                         </persName>
-                        <occupation>lawyer</occupation>
+                        <occupation>lawyer
+                            <address>
+                                <placeName ref="#wipplingerstraße"></placeName>
+                            </address>
+                        </occupation>
                     </person>
                 </listPerson>
             </particDesc>
             <settingDesc>
                 <listPlace>
+                    <place xml:id="florianigasse">
+                        <placeName>Florianigasse 46, Vienna</placeName>
+                        <location>
+                            <address>
+                                <street>Florianigasse 46</street>
+                                <postCode>1080</postCode>
+                                <settlement ref="https://www.geonames.org/2761333">Vienna</settlement>
+                                <region type="state" ref="https://www.geonames.org/2761367">Vienna</region>
+                                <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
+                            </address>
+                        </location>
+                    </place>
                     <place xml:id="hinterholz">
-                        <placeName notAfter-iso="1967">Hinterholz 6, Kirchstetten</placeName>
-                        <placeName notBefore-iso="1967">Audenstraße 6, Kirchstetten</placeName>
+                        <placeName>Hinterholz 6, Kirchstetten</placeName>
                         <location>
                             <address>
                                 <street>Hinterholz 6</street>
-                                <street>Audenstraße 6</street><!-- i would like to keep both ... how encode relationship between them? -->
                                 <postCode>3062</postCode>
                                 <settlement ref="https://www.geonames.org/7871886">Kirchstetten</settlement>
-                                <region type="state">Lower Austria</region>
-                                <country key="AT">Austria</country>
+                                <region type="state" ref="https://www.geonames.org/2770542">Lower Austria</region>
+                                <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
                             </address>
                         </location>
                     </place>
@@ -151,10 +161,22 @@
                         <location>
                             <address>
                                 <street>77 St. Mark's Place</street>
-                                <settlement>New York City</settlement>
-                                <region type="state">New York</region>
+                                <settlement ref="https://www.geonames.org/5128581">New York City</settlement>
+                                <region type="state" ref="https://www.geonames.org/5128638">New York</region>
                                 <postCode>10003</postCode>
-                                <country key="US">United States of America</country>
+                                <country key="US" ref="https://www.geonames.org/6252001">United States of America</country>
+                            </address>
+                        </location>
+                    </place>
+                    <place xml:id="wipplingerstraße">
+                        <placeName>Wipplingerstraße 24, Wien</placeName>
+                        <location>
+                            <address>
+                                <street>Wipplingerstraße 24</street>
+                                <postCode>1010</postCode>
+                                <settlement ref="https://www.geonames.org/2761333">Vienna</settlement>
+                                <region type="state" ref="https://www.geonames.org/2761367">Vienna</region>
+                                <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
                             </address>
                         </location>
                     </place>
@@ -190,13 +212,13 @@
                   <p>
                       <lb/>welcher am unten bezeichneten Tage zwischen
                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich  Z i m m e r m a n n</rs> , Direktor i.R.,
-                      <lb/>Wien VIII., Florianigasse 40 als <rs type="person" ref="#ezimmermann">Verkäufer</rs> einerseits und
+                      <lb/><rs type="place" ref="#florianigasse">Wien VIII., Florianigasse 4<unclear>6</unclear></rs> als <rs type="person" ref="#ezimmermann">Verkäufer</rs> einerseits und
                       <lb/>Herrn <rs type="person" ref="#whauden">Wystan Hugh  A u d e n</rs> , Professor in <rs type="place" ref="#stmarksplace">77 St.Marks <unclear reason="illegible">P</unclear>lace,
                       <lb/>New York City, N.Y.</rs> sowie
                       <lb/>Herrn <rs type="person" ref="#cskallman">Chester Simon  K a l l m a n</rs> , <rs type="place" ref="#stmarksplace">77 St.Marks Place,
                       <lb/>New York City, N.Y.</rs>
                       <lb/>die <rs type="person" ref="#cskallman #whauden">beiden Letzteren</rs> vertreten durch Herrn <rs type="person" ref="#wredlich">Dr.Walter R e d l i c h</rs>,
-                      <lb/>Rechtsanwalt in Wien I., Wipplingerstrasse 24,
+                      <lb/>Rechtsanwalt in <rs type="place" ref="#wipplingerstraße">Wien I., Wipplingerstrasse 24</rs>,
                       <lb/>als <rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note>This should read 'Käufer'.</note> andererseits, vereinbart und abgeschlossen wurde
                       <lb/>wie folgt:
                   </p>
@@ -297,8 +319,8 @@
                    </p>
                    <p>
                        <lb/>Ich bestätige die Echtheit der Unterschrift vorstehenden des
-                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs>,Direktor in Ruhe in Wien,VIII.
-                       <lb/>Florianigasse 46------------------------.-.-.-.-.-.-.-.-.-.-.
+                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs>,Direktor in Ruhe in <rs type="place" ref="#florianigasse">Wien,VIII.
+                       <lb/>Florianigasse 46</rs>------------------------.-.-.-.-.-.-.-.-.-.-.
                        <lb/>Wien,am vierten Oktober Eintausendneunhundert<unclear>si</unclear>ebenundfünfzig.- <unclear>- -</unclear>
                        <lb/>Leg.Geb.+ Stpl.u.Ums.St.zus.S 141.50
                    </p>
