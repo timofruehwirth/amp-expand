@@ -192,9 +192,9 @@
     <text type="legal_document"><!-- better value? -->
         <body>
             <pb n="1"/>
-              <div><!-- how add additions (stamp, writing) as 2nd layer of text? work with div1 etc numbered division? -->
+              <div n="2"><!-- how add additions (stamp, writing) as 2nd layer of text? div? add? -->
                   <p>
-                      <lb/>1994/57<!-- encode as stamp -->
+                      <lb/><stamp>1994/57</stamp>
                   </p>
                   <p>
                       <lb/>Angezeigt am 9.Okt.1957 u.un<unclear></unclear>er B.R.P.<!-- encode different typefaces -->
@@ -202,13 +202,17 @@
                       <lb/>Finanzamt für Gebühren u.Verkehrsteuern Wien
                       <lb/>Slattner eh.
                   </p>
+              </div>
+              <div n="1">
+                  <head>K a u f v e r t r a g</head>
+              </div>
+              <div n="2">
                   <p>
                       <lb/>S 6.-- österr.
                       <lb/>Stempelmarke
                   </p>
               </div>
-              <div>
-                  <head>K a u f v e r t r a g</head>
+              <div n="1">
                   <p>
                       <lb/>welcher am unten bezeichneten Tage zwischen
                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich  Z i m m e r m a n n</rs> , Direktor i.R.,
