@@ -3,29 +3,28 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Purchase Agreement regarding real estate Kirchstetten, Hinterholz 6, 1957-10-04</title>
-                <author>Gamillschegg, Theodor</author>
+                <title>Purchase Agreement regarding property Kirchstetten, Hinterholz 6, 1957-10-04</title>
                 <editor>
-                    <name>Frühwirth, Timo</name>
-                    <name>Mayer, Sandra</name>
+                    <name ref="https://orcid.org/0000-0002-3997-5193">Frühwirth, Timo</name>
+                    <name ref="https://orcid.org/0000-0002-2915-5888">Mayer, Sandra</name>
                 </editor>
             </titleStmt>
             <editionStmt>
-                <edition>machine-readable edition</edition><!-- useful information? -->
-                <funder><!-- `funder` here better/worse than in `titleStmt`? -->
-                    <orgName>FWF Austrian Science Fund</orgName><!-- `orgName` better/worse than `name`? -->
+                <edition>machine-readable edition</edition>
+                <funder>
+                    <orgName>FWF Austrian Science Fund</orgName>
                     <address>
                         <street>Sensengasse 1</street>
-                        <postCode>1090</postCode><!-- better without 'Vienna'? -->
+                        <postCode>1090</postCode>
                         <placeName>
-                            <country>Austria</country>
                             <settlement>Vienna</settlement>
+                            <country>Austria</country>
                         </placeName>
                     </address>
                 </funder>
                 <respStmt>
                     <resp>transcription and encoding</resp>
-                    <name>Frühwirth, Timo</name>
+                    <name ref="https://orcid.org/0000-0002-3997-5193">Frühwirth, Timo</name>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
@@ -40,6 +39,7 @@
                         <p>Notices:</p>
                         <p>You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation. No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.</p>
                     </licence>
+                    <p></p><!-- add legal information -->
                 </availability>
             </publicationStmt>
             <sourceDesc>
@@ -47,21 +47,28 @@
                     <witness n="1">
                         <msDesc>
                             <msIdentifier>
-                                <institution><!-- instead of repository/collection/idno ... -->
-                                    <orgName>Bezirksgericht Neulengbach [Neulengbach District Court]</orgName><!-- or `name` better? -->
+                                <institution>
+                                    <orgName>Bezirksgericht Neulengbach [Neulengbach District Court]</orgName>
                                     <address>
                                         <street>Hauptplatz 2</street>
                                         <postCode>3040</postCode>
-                                        <placeName><!-- `placeName` this way useful? -->
+                                        <placeName>
                                             <settlement>Neulengbach</settlement>
-                                            <region>Lower Austria</region>
                                             <country>Austria</country>
                                         </placeName>
                                     </address>
                                 </institution>
                             </msIdentifier>
+                            <physDesc>
+                                <objectDesc></objectDesc><!-- ? -->
+                                <typeDesc>
+                                    <summary></summary><!-- ? -->
+                                    <typeNote xml:id="typewriter1"></typeNote>
+                                    <typeNote xml:id="typewriter2"></typeNote>
+                                </typeDesc>
+                            </physDesc>
                             <history>
-                                <origin><origDate when-iso="1957-10-04">1957-10-04</origDate></origin><!-- do I need pcdata when data are already included as value? -->
+                                <origin><origDate when-iso="1957-10-04">1957-10-04</origDate></origin>
                             </history>
                         </msDesc>
                     </witness>
@@ -132,51 +139,55 @@
             </particDesc>
             <settingDesc>
                 <listPlace>
-                    <place xml:id="florianigasse">
-                        <placeName>Florianigasse 46, Vienna</placeName>
+                    <place xml:id="florianigasse">    
                         <location>
                             <address>
                                 <street>Florianigasse 46</street>
                                 <postCode>1080</postCode>
-                                <settlement ref="https://www.geonames.org/2761333">Vienna</settlement>
-                                <region type="state" ref="https://www.geonames.org/2761367">Vienna</region>
-                                <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
+                                <placeName>
+                                   <settlement ref="https://www.geonames.org/2761333">Vienna</settlement>
+                                   <region type="state" ref="https://www.geonames.org/2761367">Vienna</region>
+                                   <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
+                                </placeName>
                             </address>
                         </location>
                     </place>
                     <place xml:id="hinterholz">
-                        <placeName>Hinterholz 6, Kirchstetten</placeName>
                         <location>
                             <address>
                                 <street>Hinterholz 6</street>
                                 <postCode>3062</postCode>
-                                <settlement ref="https://www.geonames.org/7871886">Kirchstetten</settlement>
-                                <region type="state" ref="https://www.geonames.org/2770542">Lower Austria</region>
-                                <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
+                                <placeName>
+                                   <settlement ref="https://www.geonames.org/7871886">Kirchstetten</settlement>
+                                   <region type="state" ref="https://www.geonames.org/2770542">Lower Austria</region>
+                                   <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
+                                </placeName>
                             </address>
                         </location>
                     </place>
                     <place xml:id="stmarksplace">
-                        <placeName>77 St. Mark's Place, New York City</placeName>
                         <location>
                             <address>
                                 <street>77 St. Mark's Place</street>
-                                <settlement ref="https://www.geonames.org/5128581">New York City</settlement>
-                                <region type="state" ref="https://www.geonames.org/5128638">New York</region>
                                 <postCode>10003</postCode>
-                                <country key="US" ref="https://www.geonames.org/6252001">United States of America</country>
+                                <placeName>
+                                   <settlement ref="https://www.geonames.org/5128581">New York City</settlement>
+                                   <region type="state" ref="https://www.geonames.org/5128638">New York</region>
+                                   <country key="US" ref="https://www.geonames.org/6252001">United States of America</country>
+                                </placeName>    
                             </address>
                         </location>
                     </place>
                     <place xml:id="wipplingerstraße">
-                        <placeName>Wipplingerstraße 24, Wien</placeName>
                         <location>
                             <address>
                                 <street>Wipplingerstraße 24</street>
                                 <postCode>1010</postCode>
-                                <settlement ref="https://www.geonames.org/2761333">Vienna</settlement>
-                                <region type="state" ref="https://www.geonames.org/2761367">Vienna</region>
-                                <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
+                                <placeName>
+                                    <settlement ref="https://www.geonames.org/2761333">Vienna</settlement>
+                                    <region type="state" ref="https://www.geonames.org/2761367">Vienna</region>
+                                    <country key="AT" ref="https://www.geonames.org/2782113">Austria</country>
+                                </placeName>
                             </address>
                         </location>
                     </place>
@@ -185,16 +196,16 @@
         </profileDesc>
         <revisionDesc>
             <listChange>
-                <change who="tfruehwirth">created file</change>
+                <change who="tfruehwirth" when="2021-10-19">created file</change>
             </listChange>    
         </revisionDesc>
     </teiHeader>
     <text type="legal_document"><!-- better value? -->
         <body>
             <pb n="1"/>
-              <div n="2"><!-- how add additions (stamp, writing) as 2nd layer of text? div? add? -->
+              <div><!-- how add additions (stamp, writing) as 2nd layer of text? div? add? -->
                   <p>
-                      <lb/><stamp>1994/57</stamp>
+                      <lb/>1994/57
                   </p>
                   <p>
                       <lb/>Angezeigt am 9.Okt.1957 u.un<unclear></unclear>er B.R.P.<!-- encode different typefaces -->
@@ -203,16 +214,16 @@
                       <lb/>Slattner eh.
                   </p>
               </div>
-              <div n="1">
+              <div>
                   <head>K a u f v e r t r a g</head>
               </div>
-              <div n="2">
+              <div>
                   <p>
                       <lb/>S 6.-- österr.
                       <lb/>Stempelmarke
                   </p>
               </div>
-              <div n="1">
+              <div>
                   <p>
                       <lb/>welcher am unten bezeichneten Tage zwischen
                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich  Z i m m e r m a n n</rs> , Direktor i.R.,
@@ -311,10 +322,14 @@
                    </p>
                    <p>
                        <lb/><rs type="person" ref="#wredlich">Dr.Walter Redlich</rs>
+                   </p>
+                   <p>
                        <lb/>als Vollmachtsträger des Herrn <rs type="person" ref="#whauden">Wystan
-                           <lb/>Hugh Auden</rs> u.des Herrn <rs type="person" ref="#cskallman">Chester Simon
+                       <lb/>Hugh Auden</rs> u.des Herrn <rs type="person" ref="#cskallman">Chester Simon
                        <lb/>Kallman</rs> eh.
                    </p>
+              </div>    
+              <div>
                    <p>
                        <lb/>Stempelmarke S 6.-
                    </p>
@@ -338,6 +353,8 @@
                        <lb/>öffentlicher Notar
                        <lb/>Wien-Innere Stadt
                    </p>
+              </div>
+              <div>
                    <p>
                        <lb/>Zahl IX/GV-1137/2
                        <lb/>Die Uebertragung des Eigentums wird
@@ -349,8 +366,8 @@
                        <lb/>Der Vorsitzende:<!-- how encode spatial disposition? -->
                        <lb/>L.S. Unterschrift eh.<!-- how encode spatial disposition? -->
                    </p>
-                </div>
-                <div>
+              </div>
+              <div>
                    <p>
                        <lb/>Dem am 1.=<unclear></unclear> mit
                        <lb/>= 6 S =g <unclear></unclear> Originale
@@ -359,8 +376,9 @@
                    <p>
                        <lb/>Bezirksgericht Neulengbach
                        <lb/>Geschäftsabteilung:  , am 18 <unclear>Dez.</unclear> 1957
-                   </p><!-- encode Bezirksgericht Neulengbach stamp -->
-                </div>
+                       <stamp>BEZIRKSGERICHT NEULENGBA<unclear></unclear></stamp>                       
+                   </p>
+              </div>
         </body>
     </text>
 </TEI>
