@@ -78,6 +78,9 @@
         <encodingDesc>
             <projectDesc><p></p></projectDesc><!-- TO BE ADDED! -->
             <editorialDecl><p></p></editorialDecl><!-- TO BE ADDED -->
+            <tagsDecl>
+                <rendition xml:id="center">text-align: center;</rendition><!-- link to css via styleDefDecl? -->
+            </tagsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage>
@@ -204,27 +207,27 @@
         <body>
             <pb n="1"/>
               <div><!-- how add additions (stamp, writing) as 2nd layer of text? div? add? -->
-                  <p>
+                  <ab>
                       <lb/>1994/57
-                  </p>
-                  <p>
+                  </ab>
+                  <ab>
                       <lb/>Angezeigt am 9.Okt.1957 u.un<unclear></unclear>er B.R.P.<!-- encode different typefaces -->
                       <lb/>92120 verbucht.
                       <lb/>Finanzamt für Gebühren u.Verkehrsteuern Wien
                       <lb/>Slattner eh.
-                  </p>
+                  </ab>
               </div>
               <div>
-                  <head>K a u f v e r t r a g</head>
+                  <lb/><head rendition="#center">K a u f v e r t r a g</head>
               </div>
               <div>
-                  <p>
+                  <ab>
                       <lb/>S 6.-- österr.
                       <lb/>Stempelmarke
-                  </p>
+                  </ab>
               </div>
               <div>
-                  <p>
+                  <ab>
                       <lb/>welcher am unten bezeichneten Tage zwischen
                       <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich  Z i m m e r m a n n</rs> , Direktor i.R.,
                       <lb/><rs type="place" ref="#florianigasse">Wien VIII., Florianigasse 4<unclear>6</unclear></rs> als <rs type="person" ref="#ezimmermann">Verkäufer</rs> einerseits und
@@ -236,9 +239,9 @@
                       <lb/>Rechtsanwalt in <rs type="place" ref="#wipplingerstraße">Wien I., Wipplingerstrasse 24</rs>,
                       <lb/>als <rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note>This should read 'Käufer'.</note> andererseits, vereinbart und abgeschlossen wurde
                       <lb/>wie folgt:
-                  </p>
+                  </ab>
                   <p>
-                      <lb/><unclear>I</unclear>.
+                      <lb/><hi rendition="#center"><unclear>I</unclear>.</hi>
                       <lb/>Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>, im Nachstehenden <rs type="person" ref="#ezimmermann">Verkäufer</rs> ge-
                       <lb/>nannt, verkauft und übergibt an die Herren <rs type="person" ref="#whauden">Wystan Hugh Auden</rs> und
                       <lb/><rs type="person" ref="#cskallman">Chester Simon Kallman</rs>, im Nachstehenden <rs type="person" ref="#cskallman #whauden">Käufer</rs> genannt, die dem
@@ -252,7 +255,7 @@
                        <lb/>Worten: Schilling zweihundertsiebzehntausendsiebenhundert).
                    </p>
                    <p>
-                       <lb/>2.
+                       <lb/><hi rendition="#center">2.</hi>
                        <lb/>Die <rs type="person" ref="#cskallman #whauden">Käufer</rs> haben bei Unterfertigung dieses Kaufvertrages einen
                        <lb/>Teilbetrag von S <del><unclear></unclear></del>102.450.- (in Worten: <del>Schilling</del>Schilling <del><unclear></unclear></del>hundertzwei-
                        <lb/><del><unclear></unclear></del>tausendvierhundertfünfzig) angezahlt, worüber hiemit per contract<unclear></unclear>
@@ -262,7 +265,7 @@
                        <lb/>der <rs type="person" ref="#cskallman #whauden">Käufer</rs> zur Zahlung fällig.
                    </p>
                    <p>
-                       <lb/>3.
+                       <lb/><hi rendition="#center">3.</hi>
                        <lb/>Die Uebergabe und Uebernahme des gesamten Kaufobjektes in den
                        <lb/>physischen Besitz und Genuss der <rs type="person" ref="#cskallman #whauden">Käufer</rs> erfolgt symbolisch mit
                        <lb/>der Unterfertigung dieses Kaufvertrages. Die Gefahr und der Zu-
@@ -274,7 +277,7 @@
                        <lb/>Entgelt zu leisten hätte.
                    </p>
                    <p>
-                       <lb/>4.
+                       <lb/><hi rendition="#center">4.</hi>
                        <lb/>Der <rs type="person" ref="#ezimmermann">Verkäufer</rs> übernimmt keine Haftung für ein bestimmtes <unclear>Au</unclear>s-
             <pb n="3"/>
                        <lb/>mass, eine bestimmte Beschaffenheit oder ein besonderes Erträgnis
@@ -290,13 +293,13 @@
                        <lb/>lei Pachtvertrag besteht.
                    </p>
                    <p>
-                       <lb/>5.
+                       <lb/><hi rendition="#center">5.</hi>
                        <lb/>Beide Vertragesteile verzichten auf das Recht, diesen Vertrag
                        <lb/>wegen Verletzung über oder unter der Hälfte des wahren Wertes
                        <lb/>anzufechten und verzichten ebenso auf diesbezügliche Einwände.
                    </p>
                    <p>
-                       <lb/>6.
+                       <lb/><hi rendition="#center">6.</hi>
                        <lb/>Sohin erteilt der <rs type="person" ref="#ezimmermann">Verkäufer</rs>, Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>
                        <lb/><rs type="person" ref="#ezimmermann">seine</rs> ausdrückliche Zustimmung, dass auf Grund dieses Kauf-
                        <lb/>vertrages ohne <rs type="person" ref="#ezimmermann">sein</rs> weiteres Wissen und Einvernehmen auf der
@@ -308,76 +311,76 @@
                    </p>
             <pb n="4"/>
                    <p>
-                       <lb/>7.
+                       <lb/><hi rendition="#center">7.</hi>
                        <lb/>Die mit der Errichtung und Vergebührung sowie grundbücherlichen
                        <lb/>Durchf<del><unclear></unclear></del>ührung dieses Kaufvertrages verb<del><unclear></unclear></del>undenen Kosten und Gebühr<unclear>en</unclear>
                        <lb/>einschliesslich der Grunderwerbsteuer samt allen Zuschlägen, so-
                        <lb/>wie die Gerichts- und Eintragungsgebühren tragen die <rs type="person" ref="#cskallman #whauden">Käufer</rs> allei
                    </p>
-                   <p>
+                   <ab>
                        <lb/>Wien, am  4.Oktober 1957
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/><rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs> <unclear>eh</unclear>
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/><rs type="person" ref="#wredlich">Dr.Walter Redlich</rs>
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/>als Vollmachtsträger des Herrn <rs type="person" ref="#whauden">Wystan
                        <lb/>Hugh Auden</rs> u.des Herrn <rs type="person" ref="#cskallman">Chester Simon
                        <lb/>Kallman</rs> eh.
-                   </p>
+                   </ab>
               </div>    
               <div>
-                   <p>
+                   <ab>
                        <lb/>Stempelmarke S 6.-
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/>Beurk.Reg.Zahl:629/1957
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/>Ich bestätige die Echtheit der Unterschrift vorstehenden des
                        <lb/>Herrn <rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs>,Direktor in Ruhe in <rs type="place" ref="#florianigasse">Wien,VIII.
                        <lb/>Florianigasse 46</rs>------------------------.-.-.-.-.-.-.-.-.-.-.
                        <lb/>Wien,am vierten Oktober Eintausendneunhundert<unclear>si</unclear>ebenundfünfzig.- <unclear>- -</unclear>
                        <lb/>Leg.Geb.+ Stpl.u.Ums.St.zus.S 141.50
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/><rs type="person" ref="#tgamillschegg">Dr.Theodor Gamillschegg</rs> eh
                        <lb/>öffentl.Notar
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/>Rundsiegel:
                        <lb/><rs type="person" ref="#tgamillschegg">Dr.Theodor Gamillschegg</rs>
                        <lb/>öffentlicher Notar
                        <lb/>Wien-Innere Stadt
-                   </p>
+                   </ab>
               </div>
               <div>
-                   <p>
+                   <ab>
                        <lb/>Zahl IX/GV-1137/2
                        <lb/>Die Uebertragung des Eigentums wird
                        <lb/>zugelassen.
                        <lb/>Grundverkehrs-Bezirkskommission Neulen<unclear>g</unclear>
                        <lb/>am 23.Nove.1957
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/>Der Vorsitzende:<!-- how encode spatial disposition? -->
                        <lb/>L.S. Unterschrift eh.<!-- how encode spatial disposition? -->
-                   </p>
+                   </ab>
               </div>
               <div>
-                   <p>
+                   <ab>
                        <lb/>Dem am 1.=<unclear></unclear> mit
                        <lb/>= 6 S =g <unclear></unclear> Originale
                        <lb/>gleichlautend.
-                   </p>
-                   <p>
+                   </ab>
+                   <ab>
                        <lb/>Bezirksgericht Neulengbach
                        <lb/>Geschäftsabteilung:  , am 18 <unclear>Dez.</unclear> 1957
                        <stamp>BEZIRKSGERICHT NEULENGBA<unclear></unclear></stamp>                       
-                   </p>
+                   </ab>
               </div>
         </body>
     </text>
