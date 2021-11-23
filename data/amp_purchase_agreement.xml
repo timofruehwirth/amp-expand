@@ -60,11 +60,15 @@
                                 </institution>
                             </msIdentifier>
                             <physDesc>
-                                <objectDesc></objectDesc><!-- ? -->
-                                <typeDesc>
+                                <p>
+                                    In addition to the typescript of the purchase agreement proper, the document contains text segments (distinguished by means of <![CDATA[<div>]]> in the transcript) which can be associated with different agents and dates. A notation by the tax authority on the top of the first page is dated 1957-10-09. The last page contains additions by the district authority (1957-11-23) and the district court (1957-12-18).
+                                </p>
+                                <objectDesc><!-- ? -->
+                                </objectDesc>
+                                <typeDesc><!-- ? -->
                                     <summary></summary><!-- ? -->
-                                    <typeNote xml:id="typewriter1"></typeNote>
-                                    <typeNote xml:id="typewriter2"></typeNote>
+                                    <typeNote></typeNote><!-- ? -->
+                                    <typeNote></typeNote><!-- ? -->
                                 </typeDesc>
                             </physDesc>
                             <history>
@@ -75,6 +79,7 @@
                 </listWit>
             </sourceDesc>
         </fileDesc>
+        <xenoData></xenoData><!-- To BE ADDED! -->
         <encodingDesc>
             <projectDesc><p></p></projectDesc><!-- TO BE ADDED! -->
             <editorialDecl><p></p></editorialDecl><!-- TO BE ADDED -->
@@ -86,7 +91,7 @@
             <langUsage>
                 <language ident="de">German</language>
             </langUsage>
-            <particDesc><!-- this part useful/suitable for a stand-alone tei file? -->
+            <particDesc>
                 <listPerson>
                     <person xml:id="cskallman">
                         <persName ref="http://d-nb.info/gnd/119544911">
@@ -257,10 +262,10 @@
                    <p>
                        <lb/><hi rendition="#center">2.</hi>
                        <lb/>Die <rs type="person" ref="#cskallman #whauden">Käufer</rs> haben bei Unterfertigung dieses Kaufvertrages einen
-                       <lb/>Teilbetrag von S <del><unclear></unclear></del>102.450.- (in Worten: <del>Schilling</del>Schilling <del><unclear></unclear></del>hundertzwei-
-                       <lb/><del><unclear></unclear></del>tausendvierhundertfünfzig) angezahlt, worüber hiemit per contract<unclear></unclear>
-                       <lb/>quittiert wird. Der sohin verbleibende Restbetrag von <del><unclear></unclear></del>115.250.-
-                       <lb/>(in Worten: <del>Schilling</del>Schilling <del><unclear></unclear></del>hundertfünfzehntausendzweihundertfünfzig)
+                       <lb/>Teilbetrag von S <del><unclear></unclear></del><add>102.450.-</add> (in Worten: <del>Schilling</del><add>Schilling</add> <del><unclear></unclear></del><add>hundertzwei-</add>
+                       <lb/><del><unclear></unclear></del><add>tausendvierhundertfünfzig)</add> angezahlt, worüber hiemit per contract<unclear></unclear>
+                       <lb/>quittiert wird. Der sohin verbleibende Restbetrag von <del><unclear></unclear></del><add>115.250.-</add>
+                       <lb/>(in Worten: <del>Schilling</del><add>Schilling</add> <del><unclear></unclear></del><add>hundertfünfzehntausendzweihundertfünfzig</add>)
                        <lb/>ist nach grundbücherlicher Einverleibung des Eigentumsrechtes
                        <lb/>der <rs type="person" ref="#cskallman #whauden">Käufer</rs> zur Zahlung fällig.
                    </p>
@@ -327,9 +332,9 @@
                        <lb/><rs type="person" ref="#wredlich">Dr.Walter Redlich</rs>
                    </ab>
                    <ab>
-                       <lb/>als Vollmachtsträger des Herrn <rs type="person" ref="#whauden">Wystan
+                       <lb/><add>als Vollmachtsträger des Herrn <rs type="person" ref="#whauden">Wystan
                        <lb/>Hugh Auden</rs> u.des Herrn <rs type="person" ref="#cskallman">Chester Simon
-                       <lb/>Kallman</rs> eh.
+                       <lb/>Kallman</rs> eh.</add>
                    </ab>
               </div>    
               <div>
