@@ -5,8 +5,8 @@
             <titleStmt>
                 <title>Purchase Agreement regarding property Kirchstetten, Hinterholz 6, 1957-10-04</title>
                 <editor>
-                    <name ref="https://orcid.org/0000-0002-3997-5193">Frühwirth, Timo</name>
-                    <name ref="https://orcid.org/0000-0002-2915-5888">Mayer, Sandra</name>
+                    <name ref="https://orcid.org/0000-0002-3997-5193" xml:id="tfruehwirth">Frühwirth, Timo</name>
+                    <name ref="https://orcid.org/0000-0002-2915-5888" xml:id="smayer">Mayer, Sandra</name>
                 </editor>
             </titleStmt>
             <editionStmt>
@@ -24,7 +24,7 @@
                 </funder>
                 <respStmt>
                     <resp>transcription and encoding</resp>
-                    <name ref="https://orcid.org/0000-0002-3997-5193">Frühwirth, Timo</name>
+                    <name ref="#tfruehwirth">Frühwirth, Timo</name>
                 </respStmt>
             </editionStmt>
             <publicationStmt>
@@ -60,9 +60,7 @@
                                 </institution>
                             </msIdentifier>
                             <physDesc>
-                                <p>
-                                    In addition to the typescript of the purchase agreement proper, the document contains text segments (distinguished by means of <![CDATA[<div>]]> in the transcript) which can be associated with different agents and dates. A notation by the tax authority on the top of the first page is dated 1957-10-09. The last page contains additions by the district authority (1957-11-23) and the district court (1957-12-18).
-                                </p>
+                                <p>In addition to the typescript of the purchase agreement proper, the document contains text segments (distinguished by means of <![CDATA[<div>]]> in the transcript) which can be associated with different agents and dates. A notation by the tax authority on the top of the first page is dated 1957-10-09. The last page contains additions by the district authority (1957-11-23) and the district court (1957-12-18).</p>
                                 <objectDesc><!-- ? -->
                                 </objectDesc>
                                 <typeDesc><!-- ? -->
@@ -81,8 +79,12 @@
         </fileDesc>
         <xenoData></xenoData><!-- To BE ADDED! -->
         <encodingDesc>
-            <projectDesc><p></p></projectDesc><!-- TO BE ADDED! -->
-            <editorialDecl><p></p></editorialDecl><!-- TO BE ADDED -->
+            <projectDesc>
+                <p>This machine-readable edition has been published in the context of FWF P 33754 Auden Musulin Papers: A Digital Edition of W. H. Auden's Letters to Stella Musulin (https://pf.fwf.ac.at/en/research-in-practice/project-finder/50794).</p>
+            </projectDesc>
+            <editorialDecl>
+                <p>The source document has been diplomatically transcribed: no correction or normalization has been applied.</p>
+            </editorialDecl>
             <tagsDecl>
                 <rendition xml:id="center">text-align: center;</rendition><!-- link to css via styleDefDecl? -->
             </tagsDecl>
@@ -123,8 +125,8 @@
                     </person>
                     <person xml:id="whauden">
                         <persName ref="http://d-nb.info/gnd/118650963">
-                            <forename type="first">Wystan</forename><!-- no tagging abbreviated forenames here? -->
-                            <forename type="middle">Hugh</forename>
+                            <forename type="first"><choice><expan>Wystan</expan><abbr type="initial">W.</abbr></choice></forename>
+                            <forename type="middle"><choice><expan>Hugh</expan><abbr type="initial">H.</abbr></choice></forename>
                             <surname>Auden</surname>
                         </persName>
                         <residence ref="#stmarksplace"/>
@@ -204,14 +206,15 @@
         </profileDesc>
         <revisionDesc>
             <listChange>
-                <change who="tfruehwirth" when="2021-10-19">created file</change>
+                <change who="#tfruehwirth" when="2021-10-19">created file</change>
+                <change who="#tfruehwirth" when="2021-10-21">complete transcription</change>
             </listChange>    
         </revisionDesc>
     </teiHeader>
-    <text type="legal_document"><!-- better value? -->
+    <text>
         <body>
             <pb n="1"/>
-              <div><!-- how add additions (stamp, writing) as 2nd layer of text? div? add? -->
+              <div>
                   <ab>
                       <lb/>1994/57
                   </ab>
