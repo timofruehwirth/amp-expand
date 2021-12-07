@@ -10,6 +10,13 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform"><!-- root element declaring doc
            </head>
            <body>
                <h1><xsl:value-of select="//tei:head"/></h1><!-- if there are several `head` elements: `tei:head[1]` addresses only first `head`, `tei:head[last()] addresses only last `head` etc. -->
+               <xsl:for-each select="tei:TEI/tei:text/tei:body/tei:div">
+                   <div>
+                       <xsl:for-each select="child::*">
+                           <p><xsl:value-of select="."/></p>
+                       </xsl:for-each> 
+                   </div>
+               </xsl:for-each>
            </body>
        </html>
    </xsl:template>
