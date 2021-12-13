@@ -37,4 +37,8 @@
         <del><xsl:apply-templates/></del>
     </xsl:template>
     
+    <xsl:template match="tei:unclear">
+        <abbr title="unclear"><xsl:apply-templates/></abbr>
+    </xsl:template>
+    
 </xsl:stylesheet>
