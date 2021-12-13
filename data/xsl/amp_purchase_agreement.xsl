@@ -33,4 +33,8 @@
         <br />
     </xsl:template>
     
+    <xsl:template match="tei:del">
+        <del><xsl:apply-templates/></del>
+    </xsl:template>
+    
 </xsl:stylesheet>
