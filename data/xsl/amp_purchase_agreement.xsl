@@ -17,28 +17,35 @@
        </html>
    </xsl:template>
    
-    <xsl:template match="tei:div">
-        <div><xsl:apply-templates/></div><!-- 2nd step: `<xsl:apply-templates/>` makes transformation process look for further templates at lower levels  -->
-    </xsl:template>
+   <xsl:template match="tei:div">
+       <div><xsl:apply-templates/></div><!-- 2nd step: `<xsl:apply-templates/>` makes transformation process look for further templates at lower levels  -->
+   </xsl:template>
     
-    <xsl:template match="tei:ab"><!-- 3rd step: `<xsl:template match="tei:ab">`, `<xsl:template match="tei:p">` and `<xsl:template match="tei:lb">` applied -->
-        <p><xsl:apply-templates/></p>
-    </xsl:template>
+   <xsl:template match="tei:ab"><!-- 3rd step: `<xsl:template match="tei:ab">`, `<xsl:template match="tei:p">` and `<xsl:template match="tei:lb">` applied -->
+       <p><xsl:apply-templates/></p>
+   </xsl:template>
     
-    <xsl:template match="tei:p">
-        <p><xsl:apply-templates/></p>
-    </xsl:template>
+   <xsl:template match="tei:p">
+       <p><xsl:apply-templates/></p>
+   </xsl:template>
     
-    <xsl:template match="tei:lb">
-        <br />
-    </xsl:template>
+   <xsl:template match="tei:lb">
+       <br />
+   </xsl:template>
     
-    <xsl:template match="tei:del">
-        <del><xsl:apply-templates/></del>
-    </xsl:template>
+   <xsl:template match="tei:del">
+       <del><xsl:apply-templates/></del>
+   </xsl:template>
     
-    <xsl:template match="tei:unclear">
-        <abbr title="unclear"><xsl:apply-templates/></abbr>
-    </xsl:template>
+   <xsl:template match="tei:unclear">
+       <xsl:choose>
+           <xsl:when test="not(string(.))">
+               <abbr title="illegible">[<xsl:apply-templates/>]</abbr>
+           </xsl:when>
+           <xsl:otherwise>
+               <abbr title="unclear"><xsl:apply-templates/></abbr>
+           </xsl:otherwise>
+       </xsl:choose>
+   </xsl:template>
     
 </xsl:stylesheet>
