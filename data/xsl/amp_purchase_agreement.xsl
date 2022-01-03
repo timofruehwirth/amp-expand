@@ -39,7 +39,7 @@
     
    <xsl:template match="tei:unclear">
        <xsl:choose>
-           <xsl:when test="not(string(.))">
+           <xsl:when test="not(text())">
                <abbr title="illegible">[<xsl:apply-templates/>]</abbr>
            </xsl:when>
            <xsl:otherwise>
