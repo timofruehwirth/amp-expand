@@ -38,14 +38,11 @@
    </xsl:template>
     
    <xsl:template match="tei:unclear">
-       <xsl:choose>
-           <xsl:when test="not(text())">
-               <abbr title="illegible">[<xsl:apply-templates/>]</abbr>
-           </xsl:when>
-           <xsl:otherwise>
                <abbr title="unclear"><xsl:apply-templates/></abbr>
-           </xsl:otherwise>
-       </xsl:choose>
    </xsl:template>
     
-</xsl:stylesheet>
+   <xsl:template match="tei:gap">
+       <abbr title="illegible">[<xsl:apply-templates/>]</abbr>
+   </xsl:template>  
+    
+</xsl:stylesheet><!-- consider XML `note` element -->
