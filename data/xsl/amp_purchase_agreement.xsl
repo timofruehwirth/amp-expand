@@ -45,17 +45,10 @@
         <xsl:choose>
             <xsl:when test="@reason='deleted'">
                 <del>
-                    <abbr>
-                        <xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute><!-- the value of the xml `gap` `reason` attribute generically transforms into the xhtml `abbr` attribute value -->
-                        [<xsl:apply-templates/>]
-                    </abbr>
-                </del>  
+                    <abbr><xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>[<xsl:apply-templates/>]</abbr></del>  
             </xsl:when>
             <xsl:when test="@reason='illegible'">
-                <abbr>
-                    <xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>
-                    [<xsl:apply-templates/>]
-                </abbr>
+                <abbr><xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>[<xsl:apply-templates/>]</abbr>
             </xsl:when>
         </xsl:choose>
     </xsl:template>  
