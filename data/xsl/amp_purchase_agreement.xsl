@@ -44,8 +44,7 @@
     <xsl:template match="tei:gap">
         <xsl:choose>
             <xsl:when test="@reason='deleted'">
-                <del>
-                    <abbr><xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>[<xsl:apply-templates/>]</abbr></del>  
+                <del><abbr><xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>[<xsl:apply-templates/>]</abbr></del>  
             </xsl:when>
             <xsl:when test="@reason='illegible'">
                 <abbr><xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>[<xsl:apply-templates/>]</abbr>
