@@ -37,12 +37,27 @@
        <del><xsl:apply-templates/></del>
    </xsl:template>
     
-   <xsl:template match="tei:unclear">
-               <abbr title="unclear"><xsl:apply-templates/></abbr>
-   </xsl:template>
+    <xsl:template match="tei:unclear">
+        <abbr title="unclear"><xsl:apply-templates/></abbr>
+    </xsl:template>
     
-   <xsl:template match="tei:gap">
-       <abbr title="illegible">[<xsl:apply-templates/>]</abbr>
-   </xsl:template>  
+    <xsl:template match="tei:gap">
+        <xsl:choose>
+            <xsl:when test="@reason='deleted'">
+                <del>
+                    <abbr>
+                        <xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute><!-- the value of the xml `gap` `reason` attribute generically transforms into the xhtml `abbr` attribute value -->
+                        [<xsl:apply-templates/>]
+                    </abbr>
+                </del>  
+            </xsl:when>
+            <xsl:when test="@reason='illegible'">
+                <abbr>
+                    <xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>
+                    [<xsl:apply-templates/>]
+                </abbr>
+            </xsl:when>
+        </xsl:choose>
+    </xsl:template>  
     
 </xsl:stylesheet><!-- consider XML `note` element -->

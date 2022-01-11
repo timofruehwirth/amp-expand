@@ -266,10 +266,10 @@
                    <p>
                        <lb/><hi rendition="#center">2.</hi>
                        <lb/>Die <rs type="person" ref="#cskallman #whauden">Käufer</rs> haben bei Unterfertigung dieses Kaufvertrages einen
-                       <lb/>Teilbetrag von S <del><gap quantity="9" unit="char" reason="deleted"/></del><add>102.450.-</add> (in Worten: <del>Schilling</del><add>Schilling</add> <del><gap quantity="11" unit="char" reason="deleted"/></del><add>hundertzwei-</add>
-                       <lb/><del><gap atLeast="24" atMost="26" unit="char" reason="deleted"/></del><add>tausendvierhundertfünfzig)</add> angezahlt, worüber hiemit per contract<gap reason="illegible"/>
-                       <lb/>quittiert wird. Der sohin verbleibende Restbetrag von <del><gap quantity="9" unit="char" reason="deleted"/></del><add>115.250.-</add>
-                       <lb/>(in Worten: <del>Schilling</del><add>Schilling</add> <del><gap atLeast="38" atMost="40" unit="char" reason="deleted"/></del><add>hundertfünfzehntausendzweihundertfünfzig</add>)
+                       <lb/>Teilbetrag von S <gap quantity="9" unit="char" reason="deleted"/><add>102.450.-</add> (in Worten: <del>Schilling</del><add>Schilling</add> <gap quantity="11" unit="char" reason="deleted"/><add>hundertzwei-</add>
+                       <lb/><gap atLeast="24" atMost="26" unit="char" reason="deleted"/><add>tausendvierhundertfünfzig)</add> angezahlt, worüber hiemit per contract<gap reason="illegible"/>
+                       <lb/>quittiert wird. Der sohin verbleibende Restbetrag von <gap quantity="9" unit="char" reason="deleted"/><add>115.250.-</add>
+                       <lb/>(in Worten: <del>Schilling</del><add>Schilling</add> <gap atLeast="38" atMost="40" unit="char" reason="deleted"/><add>hundertfünfzehntausendzweihundertfünfzig</add>)
                        <lb/>ist nach grundbücherlicher Einverleibung des Eigentumsrechtes
                        <lb/>der <rs type="person" ref="#cskallman #whauden">Käufer</rs> zur Zahlung fällig.
                    </p>
@@ -322,7 +322,7 @@
                    <p>
                        <lb/><hi rendition="#center">7.</hi>
                        <lb/>Die mit der Errichtung und Vergebührung sowie grundbücherlichen
-                       <lb/>Durchf<del><gap quantity="1" unit="char" reason="deleted"/></del>ührung dieses Kaufvertrages verb<del><unclear>j</unclear></del>undenen Kosten und Gebühr<unclear>en</unclear>
+                       <lb/>Durchf<gap quantity="1" unit="char" reason="deleted"/>ührung dieses Kaufvertrages verb<del><unclear>j</unclear></del>undenen Kosten und Gebühr<unclear>en</unclear>
                        <lb/>einschliesslich der Grunderwerbsteuer samt allen Zuschlägen, so-
                        <lb/>wie die Gerichts- und Eintragungsgebühren tragen die <rs type="person" ref="#cskallman #whauden">Käufer</rs> allei
                    </p>
