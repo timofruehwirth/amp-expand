@@ -9,7 +9,28 @@
    <xsl:template match="/"><!-- `match="/"` associates the template with the root of the XML source doc = the entire XML doc -->
        <html xmlns="http://www.w3.org/1999/xhtml">
            <head>
+               <link href="../css/amp_purchase_agreement.css" type="text/css" rel="stylesheet"></link>
                <title><xsl:value-of select="//tei:title"/></title><!-- `//` indicates longer path; so, this is short for `tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title` -->
+               <meta name="description">
+                   <xsl:attribute name="content">
+                       <xsl:value-of select="//tei:titleStmt/tei:title"/>
+                   </xsl:attribute>
+               </meta>
+               <meta name="date of origin">
+                   <xsl:attribute name="content">
+                       <xsl:value-of select="//tei:origin/tei:origDate/@when-iso"/>
+                   </xsl:attribute>
+               </meta>    
+               <meta name="date of publication">
+                   <xsl:attribute name="content">
+                       <xsl:value-of select="//tei:publicationStmt/tei:date/@when-iso"/>
+                   </xsl:attribute>
+               </meta>
+               <meta name="author">
+                   <xsl:attribute name="content">
+                       <xsl:value-of select="//tei:respStmt/tei:name"/>
+                   </xsl:attribute>
+               </meta>
            </head>
            <body>
                <xsl:apply-templates select="//tei:div"/>
