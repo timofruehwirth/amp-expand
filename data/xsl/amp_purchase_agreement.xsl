@@ -54,12 +54,17 @@
        <br />
    </xsl:template>
     
-   <xsl:template match="tei:space">
-       <xsl:choose>
-           <xsl:when test="@quantity='1'">&#x00A0;</xsl:when>
-           <xsl:when test="@quantity='2'">&#x00A0;&#x00A0;</xsl:when>
-       </xsl:choose>
-   </xsl:template>
+    <xsl:template match="tei:space">
+       <xsl:value-of select="string-join((for $i in 1 to @quantity return '&#x00A0;'),'')"/>
+    </xsl:template>
+    <!-- that replaces this earlier, less simple solution:
+        <xsl:template match="tei:space">
+            <xsl:choose>
+                <xsl:when test="@quantity='1'">&#x00A0;</xsl:when>
+                <xsl:when test="@quantity='2'">&#x00A0;&#x00A0;</xsl:when>
+            </xsl:choose>
+        </xsl:template>
+    -->
     
    <xsl:template match="tei:del">
        <del><xsl:apply-templates/></del>
