@@ -56,8 +56,8 @@
     
    <xsl:template match="tei:space">
        <xsl:choose>
-           <xsl:when test="@quantity='1'"><xsl:apply-templates/>&#x00A0;</xsl:when>
-           <xsl:when test="@quantity='2'">&#x00A0;<xsl:apply-templates/>&#x00A0;</xsl:when>
+           <xsl:when test="@quantity='1'">&#x00A0;</xsl:when>
+           <xsl:when test="@quantity='2'">&#x00A0;&#x00A0;</xsl:when>
        </xsl:choose>
    </xsl:template>
     
