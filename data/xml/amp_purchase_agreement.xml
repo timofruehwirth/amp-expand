@@ -267,7 +267,7 @@
                        <lb/><hi rendition="#center">2.</hi>
                        <lb/>Die <rs type="person" ref="#cskallman #whauden">Käufer</rs> haben bei Unterfertigung dieses Kaufvertrages einen
                        <lb/>Teilbetrag von S <gap quantity="9" unit="char" reason="deleted"/><add>102.450.-</add> (in Worten: <del>Schilling</del><add>Schilling</add> <gap quantity="11" unit="char" reason="deleted"/><add>hundertzwei-</add>
-                       <lb/><gap atLeast="24" atMost="26" unit="char" reason="deleted"/><add>tausendvierhundertfünfzig)</add> angezahlt, worüber hiemit per contract<gap reason="illegible"/>
+                       <lb/><gap atLeast="24" atMost="26" unit="char" reason="deleted"/><add>tausendvierhundertfünfzig)</add> angezahlt, worüber hiemit per contract<gap atLeast="1" unit="char" reason="illegible"/>
                        <lb/>quittiert wird. Der sohin verbleibende Restbetrag von <gap quantity="9" unit="char" reason="deleted"/><add>115.250.-</add>
                        <lb/>(in Worten: <del>Schilling</del><add>Schilling</add> <gap atLeast="38" atMost="40" unit="char" reason="deleted"/><add>hundertfünfzehntausendzweihundertfünfzig</add>)
                        <lb/>ist nach grundbücherlicher Einverleibung des Eigentumsrechtes
@@ -322,15 +322,15 @@
                    <p>
                        <lb/><hi rendition="#center">7.</hi>
                        <lb/>Die mit der Errichtung und Vergebührung sowie grundbücherlichen
-                       <lb/>Durchf<gap quantity="1" unit="char" reason="deleted"/>ührung dieses Kaufvertrages verb<del><unclear>j</unclear></del>undenen Kosten und Gebühr<unclear>en</unclear>
+                       <lb/>Durchf<gap quantity="1" unit="char" reason="deleted"/>ührung dieses Kaufvertrages verb<del><unclear>j</unclear></del>undenen Kosten und Gebühr<unclear>e</unclear><gap atLeast="1" unit="char" reason="illegible"/>
                        <lb/>einschliesslich der Grunderwerbsteuer samt allen Zuschlägen, so-
-                       <lb/>wie die Gerichts- und Eintragungsgebühren tragen die <rs type="person" ref="#cskallman #whauden">Käufer</rs> allei
+                       <lb/>wie die Gerichts- und Eintragungsgebühren tragen die <rs type="person" ref="#cskallman #whauden">Käufer</rs> allei<gap reason="illegible"/>
                    </p>
                    <ab>
                        <lb/>Wien, am <space quantity="1" unit="char"/>4.Oktober 1957
                    </ab>
                    <ab>
-                       <lb/><rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs> <unclear>eh</unclear>
+                       <lb/><rs type="person" ref="#ezimmermann">Dipl.Ing.Erich Zimmermann</rs> <unclear>e</unclear><gap atLeast="1" unit="char" reason="illegible"/>
                    </ab>
                    <ab>
                        <lb/><rs type="person" ref="#wredlich">Dr.Walter Redlich</rs>
@@ -371,7 +371,7 @@
                        <lb/>Zahl IX/GV-1137/2
                        <lb/>Die Uebertragung des Eigentums wird
                        <lb/>zugelassen.
-                       <lb/>Grundverkehrs-Bezirkskommission Neulen<unclear>g</unclear>
+                       <lb/>Grundverkehrs-Bezirkskommission Neulen<gap atLeast="1" unit="char" reason="illegible"/>
                        <lb/>am 23.Nove.1957
                    </ab>
                    <ab>
