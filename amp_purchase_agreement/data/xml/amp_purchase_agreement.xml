@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Purchase Agreement regarding property Kirchstetten, Hinterholz 6, 1957-10-04</title>
+                <title>Purchase Agreement regarding property Kirchstetten, Hinterholz 6, dated 1957-10-04</title>
                 <editor>
                     <name ref="https://orcid.org/0000-0002-3997-5193" xml:id="tfruehwirth">Frühwirth, Timo</name>
                     <name ref="https://orcid.org/0000-0002-2915-5888" xml:id="smayer">Mayer, Sandra</name>
@@ -45,7 +45,7 @@
             </publicationStmt>
             <sourceDesc>
                 <listWit>
-                    <witness n="1">
+                    <witness>
                         <msDesc>
                             <msIdentifier>
                                 <institution>
@@ -61,14 +61,7 @@
                                 </institution>
                             </msIdentifier>
                             <physDesc>
-                                <p>In addition to the typescript of the purchase agreement proper, the document contains text segments (distinguished by means of <![CDATA[<div>]]> in the transcript) which can be associated with different agents and dates. A notation by the tax authority on the top of the first page is dated 1957-10-09. The last page contains additions by the district authority (1957-11-23) and the district court (1957-12-18).</p>
-                                <objectDesc><!-- ? -->
-                                </objectDesc>
-                                <typeDesc><!-- ? -->
-                                    <summary></summary><!-- ? -->
-                                    <typeNote></typeNote><!-- ? -->
-                                    <typeNote></typeNote><!-- ? -->
-                                </typeDesc>
+                                <p>In addition to the typescript of the purchase agreement proper, the document contains text segments (distinguished by means of <![CDATA[<div type="addition">]]> in the transcript) which can be associated with different agents and dates. A notation by the tax authority on the top of the first page is dated 1957-10-09. The last page contains additions by the district authority (1957-11-23) and the district court (1957-12-18).</p>
                             </physDesc>
                             <history>
                                 <origin><origDate when-iso="1957-10-04">1957-10-04</origDate></origin>
@@ -78,7 +71,8 @@
                 </listWit>
             </sourceDesc>
         </fileDesc>
-        <xenoData></xenoData><!-- To BE ADDED! -->
+        <xenoData><!-- to be added -->       
+        </xenoData>
         <encodingDesc>
             <projectDesc>
                 <p>This machine-readable edition has been published in the context of FWF P 33754 Auden Musulin Papers: A Digital Edition of W. H. Auden's Letters to Stella Musulin (https://pf.fwf.ac.at/en/research-in-practice/project-finder/50794).</p>
@@ -86,9 +80,6 @@
             <editorialDecl>
                 <p>The source document has been diplomatically transcribed: no correction or normalization has been applied.</p>
             </editorialDecl>
-            <tagsDecl>
-                <rendition xml:id="center">text-align: center;</rendition><!-- link to css via styleDefDecl? -->
-            </tagsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage>
@@ -209,27 +200,30 @@
             <listChange>
                 <change who="#tfruehwirth" when="2021-10-19">created file</change>
                 <change who="#tfruehwirth" when="2021-10-21">complete transcription</change>
+                <change who="#tfruehwirth" when="2022-02-22">release v0.1</change>
             </listChange>    
         </revisionDesc>
     </teiHeader>
     <text>
         <body>
             <pb n="1"/>
-              <div>
+              <div type="addition">
                   <ab>
-                      <lb/>1994/57
+                      <lb/><stamp>1994/57</stamp>
                   </ab>
                   <ab>
-                      <lb/>Angezeigt am 9.Okt.1957 u.un<gap quantity="1" unit="char" reason="illegible"/>er B.R.P.<!-- encode different typefaces -->
+                      <lb/>Angezeigt am 9.Okt.1957 u.un<gap quantity="1" unit="char" reason="illegible"/>er B.R.P.
                       <lb/>92120 verbucht.
                       <lb/>Finanzamt für Gebühren u.Verkehrsteuern Wien
                       <lb/>Slattner eh.
                   </ab>
               </div>
               <div>
-                  <lb/><head rendition="#center">K a u f v e r t r a g</head>
+                  <ab>
+                      <lb/><hi rend="center">K a u f v e r t r a g</hi>
+                  </ab>
               </div>
-              <div>
+              <div type="addition">
                   <ab>
                       <lb/>S 6.-- österr.
                       <lb/>Stempelmarke
@@ -246,11 +240,11 @@
                       <lb/>New York City, N.Y.</rs>
                       <lb/>die <rs type="person" ref="#cskallman #whauden">beiden Letzteren</rs> vertreten durch Herrn <rs type="person" ref="#wredlich">Dr.Walter R e d l i c h</rs>,
                       <lb/>Rechtsanwalt in <rs type="place" ref="#wipplingerstraße">Wien I., Wipplingerstrasse 24</rs>,
-                      <lb/>als <rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note>This should read 'Käufer'.</note> andererseits, vereinbart und abgeschlossen wurde
+                      <lb/>als <span xml:id="error"><rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note target="#error">Erroneous: this should read 'Käufer'.</note></span> andererseits, vereinbart und abgeschlossen wurde
                       <lb/>wie folgt:
                   </ab>
                   <p>
-                      <lb/><hi rendition="#center"><unclear>I</unclear>.</hi>
+                      <lb/><hi rend="center"><unclear>I</unclear>.</hi>
                       <lb/>Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>, im Nachstehenden <rs type="person" ref="#ezimmermann">Verkäufer</rs> ge-
                       <lb/>nannt, verkauft und übergibt an die Herren <rs type="person" ref="#whauden">Wystan Hugh Auden</rs> und
                       <lb/><rs type="person" ref="#cskallman">Chester Simon Kallman</rs>, im Nachstehenden <rs type="person" ref="#cskallman #whauden">Käufer</rs> genannt, die dem
@@ -264,7 +258,7 @@
                        <lb/>Worten: Schilling zweihundertsiebzehntausendsiebenhundert).
                    </p>
                    <p>
-                       <lb/><hi rendition="#center">2.</hi>
+                       <lb/><hi rend="center">2.</hi>
                        <lb/>Die <rs type="person" ref="#cskallman #whauden">Käufer</rs> haben bei Unterfertigung dieses Kaufvertrages einen
                        <lb/>Teilbetrag von S <gap quantity="9" unit="char" reason="deleted"/><add>102.450.-</add> (in Worten: <del>Schilling</del><add>Schilling</add> <gap quantity="11" unit="char" reason="deleted"/><add>hundertzwei-</add>
                        <lb/><gap atLeast="24" atMost="26" unit="char" reason="deleted"/><add>tausendvierhundertfünfzig)</add> angezahlt, worüber hiemit per contract<gap atLeast="1" unit="char" reason="illegible"/>
@@ -274,7 +268,7 @@
                        <lb/>der <rs type="person" ref="#cskallman #whauden">Käufer</rs> zur Zahlung fällig.
                    </p>
                    <p>
-                       <lb/><hi rendition="#center">3.</hi>
+                       <lb/><hi rend="center">3.</hi>
                        <lb/>Die Uebergabe und Uebernahme des gesamten Kaufobjektes in den
                        <lb/>physischen Besitz und Genuss der <rs type="person" ref="#cskallman #whauden">Käufer</rs> erfolgt symbolisch mit
                        <lb/>der Unterfertigung dieses Kaufvertrages. Die Gefahr und der Zu-
@@ -286,7 +280,7 @@
                        <lb/>Entgelt zu leisten hätte.
                    </p>
                    <p>
-                       <lb/><hi rendition="#center">4.</hi>
+                       <lb/><hi rend="center">4.</hi>
                        <lb/>Der <rs type="person" ref="#ezimmermann">Verkäufer</rs> übernimmt keine Haftung für ein bestimmtes <unclear>Au</unclear>s-
             <pb n="3"/>
                        <lb/>mass, eine bestimmte Beschaffenheit oder ein besonderes Erträgnis
@@ -302,13 +296,13 @@
                        <lb/>lei Pachtvertrag besteht.
                    </p>
                    <p>
-                       <lb/><hi rendition="#center">5.</hi>
+                       <lb/><hi rend="center">5.</hi>
                        <lb/>Beide Vertragesteile verzichten auf das Recht, diesen Vertrag
                        <lb/>wegen Verletzung über oder unter der Hälfte des wahren Wertes
                        <lb/>anzufechten und verzichten ebenso auf diesbezügliche Einwände.
                    </p>
                    <p>
-                       <lb/><hi rendition="#center">6.</hi>
+                       <lb/><hi rend="center">6.</hi>
                        <lb/>Sohin erteilt der <rs type="person" ref="#ezimmermann">Verkäufer</rs>, Herr <rs type="person" ref="#ezimmermann">Dipl.Ing. Erich Zimmermann</rs>
                        <lb/><rs type="person" ref="#ezimmermann">seine</rs> ausdrückliche Zustimmung, dass auf Grund dieses Kauf-
                        <lb/>vertrages ohne <rs type="person" ref="#ezimmermann">sein</rs> weiteres Wissen und Einvernehmen auf der
@@ -320,7 +314,7 @@
                    </p>
             <pb n="4"/>
                    <p>
-                       <lb/><hi rendition="#center">7.</hi>
+                       <lb/><hi rend="center">7.</hi>
                        <lb/>Die mit der Errichtung und Vergebührung sowie grundbücherlichen
                        <lb/>Durchf<gap quantity="1" unit="char" reason="deleted"/>ührung dieses Kaufvertrages verb<del><unclear>j</unclear></del>undenen Kosten und Gebühr<unclear>e</unclear><gap atLeast="1" unit="char" reason="illegible"/>
                        <lb/>einschliesslich der Grunderwerbsteuer samt allen Zuschlägen, so-
@@ -366,7 +360,7 @@
                        <lb/>Wien-Innere Stadt
                    </ab>
               </div>
-              <div>
+              <div type="addition">
                    <ab>
                        <lb/>Zahl IX/GV-1137/2
                        <lb/>Die Uebertragung des Eigentums wird
@@ -375,11 +369,11 @@
                        <lb/>am 23.Nove.1957
                    </ab>
                    <ab>
-                       <lb/>Der Vorsitzende:<!-- how encode spatial disposition? -->
-                       <lb/>L.S. Unterschrift eh.<!-- how encode spatial disposition? -->
+                       <lb/>Der Vorsitzende:
+                       <lb/>L.S. Unterschrift eh.
                    </ab>
               </div>
-              <div>
+              <div type="addition">
                    <ab>
                        <lb/><unclear>Dem</unclear> am 1.=<gap atLeast="15" atMost="20" unit="char" reason="illegible"/> mi<unclear>t</unclear>
                        <lb/>= 6 <unclear>S</unclear> =<unclear>g</unclear> <gap atLeast="10" atMost="15" unit="char" reason="illegible"/> Origin<unclear>ale</unclear>
@@ -388,7 +382,7 @@
                    <ab>
                        <lb/>Bezir<unclear>ksgericht Neule</unclear>ngbach
                        <lb/><unclear>Ges</unclear>chä<unclear>ftsabteil</unclear>ung:  , am 18 <unclear>Dez.</unclear> 1957
-                       <stamp>BEZIRKSGERICHT NEULENGBA<gap atLeast="2" unit="char" reason="illegible"/></stamp>                       
+                       <lb/><stamp>BEZIRKSGERICHT NEULENGBA<gap atLeast="2" unit="char" reason="illegible"/></stamp>                       
                    </ab>
               </div>
         </body>
