@@ -5,4 +5,4 @@
 
 ## Directory Structure
 
-amp-expand/amp_purchase_agreement/data includes XML, XSLT, XHTML, and CSS code of a human-readable and machine-readable diplomatic transcription of W. H. Auden's purchase contract for the property Kirchstetten, Hinterholz 6, dated 1957-10-04.
+[amp-expand/amp_purchase_agreement/data](https://github.com/timofruehwirth/amp-expand/tree/main/amp_purchase_agreement/data) includes XML, XSLT, XHTML, and CSS code of a human-readable and machine-readable diplomatic transcription of W. H. Auden's purchase contract for the property Kirchstetten, Hinterholz 6, dated 1957-10-04.
