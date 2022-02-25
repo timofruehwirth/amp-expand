@@ -65,7 +65,7 @@
         <br />
     </xsl:template>
     
-    <xsl:template match="tei:span">
+    <xsl:template match="tei:sic">
         <span><xsl:attribute name="class">tooltip</xsl:attribute><xsl:apply-templates/></span>
     </xsl:template>
     
@@ -108,4 +108,4 @@
         </xsl:choose>
     </xsl:template>
     
-</xsl:stylesheet><!-- consider XML `note` element -->
+</xsl:stylesheet>

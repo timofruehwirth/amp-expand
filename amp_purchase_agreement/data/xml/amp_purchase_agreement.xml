@@ -220,7 +220,7 @@
               </div>
               <div>
                   <ab>
-                      <lb/><hi rend="center">K a u f v e r t r a g</hi>
+                      <lb/><hi rend="center">K a u f v e r t r a g</hi><!-- this works but generates invalid xhtml! -->
                   </ab>
               </div>
               <div type="addition">
@@ -240,7 +240,7 @@
                       <lb/>New York City, N.Y.</rs>
                       <lb/>die <rs type="person" ref="#cskallman #whauden">beiden Letzteren</rs> vertreten durch Herrn <rs type="person" ref="#wredlich">Dr.Walter R e d l i c h</rs>,
                       <lb/>Rechtsanwalt in <rs type="place" ref="#wipplingerstraße">Wien I., Wipplingerstrasse 24</rs>,
-                      <lb/>als <span xml:id="error"><rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note target="#error">Erroneous: this should read 'Käufer'.</note></span> andererseits, vereinbart und abgeschlossen wurde
+                      <lb/>als <sic xml:id="error"><rs type="person" ref="#cskallman #whauden">Verkäufer</rs><note target="#error">Erroneous: this should read "Käufer"</note></sic> andererseits, vereinbart und abgeschlossen wurde<!-- better element than `sic`? `sic`/`corr` combination? -->
                       <lb/>wie folgt:
                   </ab>
                   <p>
