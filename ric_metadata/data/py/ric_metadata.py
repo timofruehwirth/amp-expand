@@ -4,9 +4,11 @@ import csv
 # create `ric_metadata.xml`
 xml_file = open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.xml", "w")
 
-# opening file
+# open `ric.metadata.csv`
 with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.csv", "r", newline='') as csv_file:
+    # read file and map data in dictionary
     table = csv.DictReader(csv_file, delimiter=',', quotechar='"')
+    # store cell data in variables
     for row in table:
         doc_id = row['document_id']
         doc_title = row['document_title']
@@ -14,6 +16,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         doc_author = row['document_author']
         xml_file.write("\n<xml doc type etc.>")
         xml_file.write("\n<further xml info etc.>")
+        # write variables in new file (unless empty)
         if doc_id != "":
             xml_file.write("\n<" + doc_id + ">")
         if doc_title != "":
@@ -24,4 +27,5 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
             xml_file.write("\n<" + doc_author + ">")
         xml_file.write("\n")
 
+# close `ric_metadata.xml`
 xml_file.close()
