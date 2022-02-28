@@ -2,7 +2,7 @@
 import csv
 
 # create `ric_metadata.xml`
-xml_file = open("ric_metadata.xml", "w")
+xml_file = open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.xml", "w")
 
 # opening file
 with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.csv", "r", newline='') as csv_file:
