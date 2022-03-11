@@ -30,7 +30,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         doc_author = row['document_author']
         doc_language = row['document_language']
         # insert variables (unless empty) into ric-record entry in rdf/xml file
-        rdf_file.write("\n<rico:Record rdf:about=\"https://amp.acdh.oeaw.ac.at/" + doc_id + ".html\">")
+        rdf_file.write("\n<rico:Record rdf:about=\"https://amp.acdh.oeaw.ac.at/amp-transcript__" + doc_id + ".html\">")
         if doc_id != "":
             rdf_file.write("\n   <rico:hasOrHadIdentifier>amp_" + doc_id + "</rico:hasOrHadIdentifier>")
         if doc_title != "":
