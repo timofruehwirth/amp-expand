@@ -50,6 +50,17 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         rdf_file.write("\n</rico:Record>")
         rdf_file.write("\n")
         number_records += 1
+        ''''# TEST TEST TEST !!!!
+        with open("C:/Users/tfruehwirth/Desktop/amp-data/data/editions/amp-transcript__" + doc_id + ".xml", "r+") as edition_file:
+            contents = edition_file.read().replace("      </fileDesc>", "      </fileDesc>"
+                                                                        "\n      <xenoData>"
+                                                                        "\n         <rico:Record rdf:about="
+                                                                        "\"https://amp.acdh.oeaw.ac.at/amp-transcript__" + doc_id + ".html\">\n      </xenoData>")
+            edition_file.seek(0)
+            edition_file.truncate()
+            edition_file.write(contents)
+
+        '''# TEST TEST TEST !!!
 
 # introduce ric-agents section
 rdf_file.write("\n<!-- ric agents -->")
@@ -86,4 +97,4 @@ rdf_file.close()
 print("")
 print(str(number_records) + " record entry/ies written; " + str(number_agents) + " agent entry/ies written.\n")
 print("             __|__\n        ______(_)______\n            \"  \"  \"\n")
-print("Thank you for flying with us.")
+print("Thank you for flying with AMP.")
