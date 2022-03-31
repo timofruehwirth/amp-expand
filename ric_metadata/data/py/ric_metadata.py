@@ -1,6 +1,10 @@
 # this file is in development!
+
 # import csv module
 import csv
+
+# import datetime class from datetime module
+from datetime import datetime
 
 # create list of ric agents, record and agent numerators
 doc_agent_list = []
@@ -95,6 +99,6 @@ rdf_file.close()
 
 # print log
 print("")
-print(str(number_records) + " record entry/ies written; " + str(number_agents) + " agent entry/ies written.\n")
-print("             __|__\n        ______(_)______\n            \"  \"  \"\n")
+print(str(number_records) + " record entry/ies and " + str(number_agents) + " agent entry/ies written on " + str(datetime.now()) + ".")
+print("\n             __|__\n        ______(_)______\n            \"  \"  \"\n")
 print("Thank you for flying with AMP.")
