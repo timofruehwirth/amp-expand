@@ -36,7 +36,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         doc_author_02 = row['document_author_02']
         doc_language = row['document_language']
         doc_content_type = row['content_type']
-        # create rdf/xml record element and sub-elements
+        # create rdf/xml record sub-elements
         record = etree.SubElement(root, etree.QName(nsmap['rico'], 'Record'))
         record.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/amp-transcript__" + doc_id
         # insert variables unless empty
@@ -79,6 +79,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         doc_agent_02 = row['document_author_02']
         # test if variable is part of agent list or empty
         if doc_agent_01 not in doc_agent_list and doc_agent_01 != "":
+            # create rdf/xml agent sub-elements
             doc_agent_01_abbr = doc_agent_01.partition(',')
             agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
             agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_01_abbr[0].lower() + ".html"
@@ -95,6 +96,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
             doc_agent_list.append(doc_agent_02)
             number_agents += 1
 
+# write rdf/xml tree in rdf file
 with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.rdf", "w") as rdf_file:
     rdf_file.write(str(etree.tostring(root, encoding="utf-8", xml_declaration=True, pretty_print=True).decode("utf-8")))
 
