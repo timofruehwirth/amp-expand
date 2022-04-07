@@ -49,17 +49,18 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         if doc_author_01 != "":
             # partitioning author name string for surname
             doc_author_01_abbr = doc_author_01.partition(',')
-            etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_01_abbr[0].lower() + ".html"
+            etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_01_abbr[0].lower() + "_" + doc_author_01_abbr[2][1].lower() + ".html"
         if doc_author_02 != "":
             doc_author_02_abbr = doc_author_02.partition(',')
-            etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_02_abbr[0].lower() + ".html"
+            etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_02_abbr[0].lower() + "_" + doc_author_02_abbr[2][1].lower() + ".html"
         if doc_content_type != "":
             etree.SubElement(record, etree.QName(nsmap["rico"], "hasContentOfType")).text = doc_content_type
         if doc_language != "":
             etree.SubElement(record, etree.QName(nsmap["rico"], "hasOrHadLanguage")).text = doc_language
         # add to record numerator
         number_records += 1
-
+        # with open("C:/Users/tfruehwirth/Desktop/Untitled-1.xml") as test_file:
+        #    test_file.write(str(etree.tostring(root, encoding="utf-8", xml_declaration=True, pretty_print=True).decode("utf-8")))
         ''''# TEST TEST TEST !!!!
         with open("C:/Users/tfruehwirth/Desktop/amp-data/data/editions/amp-transcript__" + doc_id + ".xml", "r+") as edition_file:
             contents = edition_file.read().replace("      </fileDesc>", "      </fileDesc>"
@@ -82,7 +83,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
             # create rdf/xml agent sub-elements
             doc_agent_01_abbr = doc_agent_01.partition(',')
             agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
-            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_01_abbr[0].lower() + ".html"
+            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_01_abbr[0].lower() + "_" + doc_agent_01_abbr[2][1].lower() + ".html"
             etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_01
             # add unlisted agent to agent list
             doc_agent_list.append(doc_agent_01)
@@ -91,7 +92,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         if doc_agent_02 not in doc_agent_list and doc_agent_02 != "":
             doc_agent_02_abbr = doc_agent_02.partition(',')
             agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
-            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_02_abbr[0].lower() + ".html"
+            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_02_abbr[0].lower() + "_" + doc_agent_02_abbr[2][1].lower() + ".html"
             etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_02
             doc_agent_list.append(doc_agent_02)
             number_agents += 1
