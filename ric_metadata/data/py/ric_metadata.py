@@ -34,6 +34,8 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         doc_date = row['document_date']
         doc_author_01 = row['document_author_01']
         doc_author_02 = row['document_author_02']
+        doc_author_03 = row["document_author_03"]
+        doc_author_04 = row["document_author_04"]
         doc_language = row['document_language']
         doc_content_type = row['content_type']
         # create rdf/xml record sub-elements
@@ -53,6 +55,12 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         if doc_author_02 != "":
             doc_author_02_abbr = doc_author_02.partition(',')
             etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_02_abbr[0].lower() + "_" + doc_author_02_abbr[2][1].lower() + ".html"
+        if doc_author_03 != "":
+            doc_author_03_abbr = doc_author_03.partition(',')
+            etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_03_abbr[0].lower() + "_" + doc_author_03_abbr[2][1].lower() + ".html"
+        if doc_author_04 != "":
+            doc_author_04_abbr = doc_author_04.partition(',')
+            etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_04_abbr[0].lower() + "_" + doc_author_04_abbr[2][1].lower() + ".html"
         if doc_content_type != "":
             etree.SubElement(record, etree.QName(nsmap["rico"], "hasContentOfType")).text = doc_content_type
         if doc_language != "":
@@ -76,8 +84,10 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
 with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.csv", "r", newline='') as csv_file:
     table = csv.DictReader(csv_file, delimiter=',', quotechar='"')
     for row in table:
-        doc_agent_01 = row['document_author_01']
-        doc_agent_02 = row['document_author_02']
+        doc_agent_01 = row["document_author_01"]
+        doc_agent_02 = row["document_author_02"]
+        doc_agent_03 = row["document_author_03"]
+        doc_agent_04 = row["document_author_04"]
         # test if variable is part of agent list or empty
         if doc_agent_01 not in doc_agent_list and doc_agent_01 != "":
             # create rdf/xml agent sub-elements
@@ -95,6 +105,20 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
             agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_02_abbr[0].lower() + "_" + doc_agent_02_abbr[2][1].lower() + ".html"
             etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_02
             doc_agent_list.append(doc_agent_02)
+            number_agents += 1
+        if doc_agent_03 not in doc_agent_list and doc_agent_03 != "":
+            doc_agent_03_abbr = doc_agent_03.partition(',')
+            agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
+            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_03_abbr[0].lower() + "_" + doc_agent_03_abbr[2][1].lower() + ".html"
+            etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_03
+            doc_agent_list.append(doc_agent_03)
+            number_agents += 1
+        if doc_agent_04 not in doc_agent_list and doc_agent_04 != "":
+            doc_agent_04_abbr = doc_agent_04.partition(',')
+            agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
+            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_04_abbr[0].lower() + "_" + doc_agent_04_abbr[2][1].lower() + ".html"
+            etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_04
+            doc_agent_list.append(doc_agent_04)
             number_agents += 1
 
 # write rdf/xml tree in rdf file
