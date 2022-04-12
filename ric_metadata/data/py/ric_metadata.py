@@ -49,7 +49,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         if doc_date != "":
             etree.SubElement(record, etree.QName(nsmap["rico"], "isAssociatedWithDate")).text = doc_date
         if doc_author_01 != "":
-            # partitioning author name string for surname
+            # partitioning author name string for surname and first-name initial
             doc_author_01_abbr = doc_author_01.partition(',')
             etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_01_abbr[0].lower() + "_" + doc_author_01_abbr[2][1].lower() + ".html"
         if doc_author_02 != "":
@@ -88,38 +88,19 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         doc_agent_02 = row["document_author_02"]
         doc_agent_03 = row["document_author_03"]
         doc_agent_04 = row["document_author_04"]
-        # test if variable is part of agent list or empty
-        if doc_agent_01 not in doc_agent_list and doc_agent_01 != "":
-            # create rdf/xml agent sub-elements
-            doc_agent_01_abbr = doc_agent_01.partition(',')
-            agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
-            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_01_abbr[0].lower() + "_" + doc_agent_01_abbr[2][1].lower() + ".html"
-            etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_01
-            # add unlisted agent to agent list
-            doc_agent_list.append(doc_agent_01)
-            # add to agent numerator
-            number_agents += 1
-        if doc_agent_02 not in doc_agent_list and doc_agent_02 != "":
-            doc_agent_02_abbr = doc_agent_02.partition(',')
-            agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
-            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_02_abbr[0].lower() + "_" + doc_agent_02_abbr[2][1].lower() + ".html"
-            etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_02
-            doc_agent_list.append(doc_agent_02)
-            number_agents += 1
-        if doc_agent_03 not in doc_agent_list and doc_agent_03 != "":
-            doc_agent_03_abbr = doc_agent_03.partition(',')
-            agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
-            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_03_abbr[0].lower() + "_" + doc_agent_03_abbr[2][1].lower() + ".html"
-            etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_03
-            doc_agent_list.append(doc_agent_03)
-            number_agents += 1
-        if doc_agent_04 not in doc_agent_list and doc_agent_04 != "":
-            doc_agent_04_abbr = doc_agent_04.partition(',')
-            agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
-            agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_04_abbr[0].lower() + "_" + doc_agent_04_abbr[2][1].lower() + ".html"
-            etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent_04
-            doc_agent_list.append(doc_agent_04)
-            number_agents += 1
+        doc_agents = [doc_agent_01, doc_agent_02, doc_agent_03, doc_author_04]
+        for doc_agent in doc_agents:
+            # test if variable is part of ric agent list or empty
+            if doc_agent not in doc_agent_list and doc_agent != "":
+                # create rdf/xml agent sub-elements
+                agent = etree.SubElement(root, etree.QName(nsmap["rico"], "Agent"))
+                doc_agent_abbr = doc_agent.partition(",")
+                agent.attrib[etree.QName(nsmap["rdf"], "about")] = "https://amp.acdh.oeaw.ac.at/" + doc_agent_abbr[0].lower() + "_" + doc_agent_abbr[2][1].lower() + ".html"
+                etree.SubElement(agent, etree.QName(nsmap["rico"], "hasOrHadAgentName")).text = doc_agent
+                # add unlisted agent to agent list
+                doc_agent_list.append(doc_agent)
+                # add ric agent entry generated to agent numerator
+                number_agents += 1
 
 # write rdf/xml tree in rdf file
 with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.rdf", "w") as rdf_file:
