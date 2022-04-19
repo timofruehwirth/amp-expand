@@ -73,7 +73,7 @@
         <span><xsl:attribute name="class">tooltiptext</xsl:attribute><xsl:apply-templates/></span>
     </xsl:template>
     
-    <xsl:template match="tei:hi">
+    <xsl:template match="tei:head">
         <div><xsl:attribute name="class"><xsl:value-of select="data(@rend)"/></xsl:attribute><xsl:apply-templates/></div>
     </xsl:template>
     
