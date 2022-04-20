@@ -33,7 +33,8 @@
                 </meta>
             </head>
             <body>
-                <xsl:apply-templates select="//tei:div"/>
+                <header><h1><xsl:value-of select="//tei:title"/></h1></header>
+                <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:div"/><!-- 1st step: this path targets the highest-level `div` element -->
             </body>
         </html>
     </xsl:template>
@@ -43,17 +44,17 @@
     </xsl:template>-->
     
     <xsl:template match="tei:div">
-        <xsl:choose>
-            <xsl:when test="@type='addition'">
+        <!--<xsl:choose>
+            <xsl:when test="@type='addition'">-->
                 <div><xsl:attribute name="class"><xsl:value-of select="data(@type)"/></xsl:attribute><xsl:apply-templates/></div><!-- 2nd step: `<xsl:apply-templates/>` makes transformation process look for further templates at lower levels  -->
-            </xsl:when>
+            <!--</xsl:when>
             <xsl:otherwise>
                 <div><xsl:apply-templates/></div>
             </xsl:otherwise>
-        </xsl:choose>
+        </xsl:choose>-->
     </xsl:template>
     
-    <xsl:template match="tei:ab"><!-- 3rd step: `<xsl:template match="tei:ab">`, `<xsl:template match="tei:p">` and `<xsl:template match="tei:lb">` applied -->
+    <xsl:template match="tei:ab"><!-- 3rd step: `<xsl:template match="tei:ab">`, `<xsl:template match="tei:p">`, `<xsl:template match="tei:lb">`, etc. applied -->
         <p><xsl:apply-templates/></p>
     </xsl:template>
     

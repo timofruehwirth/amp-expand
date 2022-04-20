@@ -4,7 +4,7 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>W. H. Auden and Chester Kallman, Purchase Agreement regarding property Kirchstetten, Hinterholz 6, dated 1957-10-04</title>
+                <title>Purchase Agreement for property Kirchstetten, Hinterholz 6, 1957-10-04</title>
                 <editor>
                     <name ref="https://orcid.org/0000-0002-3997-5193" xml:id="tfruehwirth">Frühwirth, Timo</name>
                     <name ref="https://orcid.org/0000-0002-2915-5888" xml:id="smayer">Mayer, Sandra</name>
@@ -206,6 +206,7 @@
     </teiHeader>
     <text>
         <body>
+            <div type="main">
             <pb n="1"/>
                 <div type="addition">
                     <ab>
@@ -413,6 +414,7 @@
                         <lb/><stamp>BEZIRKSGERICHT NEULENGBA<gap atLeast="2" unit="char" reason="illegible"/></stamp>                       
                     </ab>
                </div>
+            </div>
         </body>
     </text>
 </TEI>
