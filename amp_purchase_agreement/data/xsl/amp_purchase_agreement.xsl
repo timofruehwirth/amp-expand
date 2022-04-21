@@ -11,6 +11,7 @@
             <head>
                 <link href="../css/amp_purchase_agreement.css" type="text/css" rel="stylesheet"></link>
                 <title><xsl:value-of select="//tei:title"/></title><!-- `//` indicates longer path; so, this is short for `tei:TEI/tei:teiHeader/tei:fileDesc/tei:titleStmt/tei:title` -->
+                <link rel="icon" type="image/x-icon" href="https://amp.acdh.oeaw.ac.at/images/Auden_Musulin_Papers_Logo_rechteckig_web.png" />
                 <meta name="description">
                     <xsl:attribute name="content">
                         <xsl:value-of select="//tei:titleStmt/tei:title"/>
@@ -33,7 +34,18 @@
                 </meta>
             </head>
             <body>
-                <header><h1><xsl:value-of select="//tei:title"/></h1></header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="https://amp.acdh.oeaw.ac.at/index.html">
+                                <img src="https://amp.acdh.oeaw.ac.at/images/Auden_Musulin_Papers_Logo_rechteckig_web.png" title="Auden Musulin Papers Logo" alt="Auden Musulin Papers Logo" class="navbar_img" />
+                            </a>
+                        </li>
+                        <li>
+                            <span id="header"><xsl:value-of select="//tei:title"/></span>
+                        </li>
+                    </ul>
+                </nav>
                 <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:div"/><!-- 1st step: this path targets the highest-level `div` element -->
             </body>
         </html>
@@ -107,6 +119,10 @@
                 <abbr><xsl:attribute name="title"><xsl:value-of select="data(@reason)"/></xsl:attribute>[<xsl:apply-templates/>]</abbr>
             </xsl:when>
         </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="tei:pb">
+        <hr />
     </xsl:template>
     
 </xsl:stylesheet>
