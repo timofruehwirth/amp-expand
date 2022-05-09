@@ -69,17 +69,16 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
         number_records += 1
         # with open("C:/Users/tfruehwirth/Desktop/Untitled-1.xml") as test_file:
         #    test_file.write(str(etree.tostring(root, encoding="utf-8", xml_declaration=True, pretty_print=True).decode("utf-8")))
-        ''''# TEST TEST TEST !!!!
+
+        ''' TEST TEST TEST
         with open("C:/Users/tfruehwirth/Desktop/amp-data/data/editions/amp-transcript__" + doc_id + ".xml", "r+") as edition_file:
-            contents = edition_file.read().replace("      </fileDesc>", "      </fileDesc>"
-                                                                        "\n      <xenoData>"
-                                                                        "\n         <rico:Record rdf:about="
-                                                                        "\"https://amp.acdh.oeaw.ac.at/amp-transcript__" + doc_id + ".html\">\n      </xenoData>")
-            edition_file.seek(0)
-            edition_file.truncate()
-            edition_file.write(contents)
-    
-            # TEST TEST TEST !!!'''
+            edition_file_string = edition_file.read()
+            replace_start = edition_file_string.find("</fileDesc>")
+            replace_end = edition_file_string.find("<encodingDesc>")
+            replace_substring = edition_file_string[replace_start:replace_end+14]
+            addition = str(etree.tostring(root, encoding="utf-8", xml_declaration=True, pretty_print=True).decode("utf-8"))
+            print(addition)
+            '''
 
 with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.csv", "r", newline='') as csv_file:
     table = csv.DictReader(csv_file, delimiter=',', quotechar='"')
