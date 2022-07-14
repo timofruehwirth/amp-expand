@@ -34,18 +34,18 @@
                 </meta>
             </head>
             <body>
-                <nav>
+                <header>
                     <ul>
                         <li>
                             <a href="https://amp.acdh.oeaw.ac.at/index.html">
-                                <img src="https://amp.acdh.oeaw.ac.at/images/Auden_Musulin_Papers_Logo_rechteckig_web.png" title="Auden Musulin Papers Logo" alt="Auden Musulin Papers Logo" class="navbar_img" />
+                                <img src="https://amp.acdh.oeaw.ac.at/images/Auden_Musulin_Papers_Logo_rechteckig_web.png" title="Auden Musulin Papers Logo" alt="Auden Musulin Papers Logo" class="header_img" />
                             </a>
                         </li>
                         <li>
                             <span id="header"><xsl:value-of select="//tei:title"/></span>
                         </li>
                     </ul>
-                </nav>
+                </header>
                 <xsl:apply-templates select="tei:TEI/tei:text/tei:body/tei:div"/><!-- 1st step: this path targets the highest-level `div` element -->
             </body>
         </html>
@@ -87,7 +87,7 @@
     </xsl:template>
     
     <xsl:template match="tei:head">
-        <div><xsl:attribute name="class"><xsl:value-of select="data(@rend)"/></xsl:attribute><xsl:apply-templates/></div>
+        <div><xsl:attribute name="class"><xsl:value-of select="substring-after(data(@rendition),'#')"/></xsl:attribute><xsl:apply-templates/></div><!-- using `substring-after` function (instead of just `select="data(@rendition)"`) to select only those characters that follow after the initial `#` as class names starting with `#` cannot be targeted in CSS -->
     </xsl:template>
     
     <xsl:template match="tei:space">

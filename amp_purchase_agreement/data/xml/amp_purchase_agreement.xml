@@ -80,6 +80,9 @@
             <editorialDecl>
                 <p>The source document has been diplomatically transcribed: no correction or normalization has been applied.</p>
             </editorialDecl>
+            <tagsDecl>
+                <rendition xml:id="align_center" scheme="css">text-align: center</rendition>
+            </tagsDecl>
         </encodingDesc>
         <profileDesc>
             <langUsage>
@@ -220,7 +223,7 @@
                         </ab>
                     </div>
                     <div>
-                        <head rend="center double_spaced">
+                        <head rendition="#align_center">
                             <lb/>Kaufvertrag
                         </head>
                     </div>
@@ -246,7 +249,7 @@
                         </ab>
                     </div>    
                     <div>
-                        <head rend="center">
+                        <head rendition="#align_center">
                             <lb/><unclear>I</unclear>.
                         </head>
                         <p>
@@ -268,7 +271,7 @@
                         </p>
                     </div>
                     <div>
-                        <head rend="center">
+                        <head rendition="#align_center">
                             <lb/>2.
                         </head>
                         <p>
@@ -282,7 +285,7 @@
                         </p>
                     </div>
                     <div>
-                        <head rend="center">
+                        <head rendition="#align_center">
                             <lb/>3.
                         </head>
                         <p>
@@ -298,7 +301,7 @@
                         </p>
                     </div>
                     <div>
-                        <head rend="center">
+                        <head rendition="#align_center">
                             <lb/>4.
                         </head>
                         <p>
@@ -322,7 +325,7 @@
                         </p>
                     </div>
                     <div>
-                        <head rend="center">
+                        <head rendition="#align_center">
                             <lb/>5.
                         </head>
                         <p>
@@ -332,7 +335,7 @@
                         </p>
                     </div>
                     <div>
-                        <head rend="center">
+                        <head rendition="#align_center">
                             <lb/>6.
                         </head>
                         <p>
@@ -348,7 +351,7 @@
                     </div>
                 <pb n="4"/>
                     <div>
-                        <head rend="center">
+                        <head rendition="#align_center">
                             <lb/>7.
                         </head>
                         <p>
