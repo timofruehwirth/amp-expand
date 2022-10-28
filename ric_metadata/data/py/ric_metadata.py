@@ -109,7 +109,15 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
 print("")
 print(str(number_records) + " record entry/ies and " + str(number_agents) + " agent entry/ies written on " + str(datetime.now()) + ".")
 print("\n             __|__\n        ______(_)______\n            \"  \"  \"\n")
-print("Thank you for flying with AMP.")
 
-# start rdf file w/ its associated program
-os.startfile("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.rdf")
+# prompt user input w/ regard to starting rdf file
+showFile = input("Thank you for flying with AMP. Do you want to open ric_metadata.rdf? Enter y/n: ")
+
+if showFile.lower() == "y":
+    print("Here you go.")
+    #  start rdf file w/ its associated program
+    os.startfile("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.rdf")
+elif showFile.lower() == "n":
+    print("Alrighty. Have a nice day.")
+else:
+    print("Invalid input.")
