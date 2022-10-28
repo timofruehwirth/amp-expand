@@ -6,6 +6,9 @@ import csv
 # import datetime.datetime module
 from datetime import datetime
 
+# import os module
+import os
+
 # this script uses the lxml library for creating xml
 # alternatively use the rdflib library for creating rdf
 
@@ -107,3 +110,6 @@ print("")
 print(str(number_records) + " record entry/ies and " + str(number_agents) + " agent entry/ies written on " + str(datetime.now()) + ".")
 print("\n             __|__\n        ______(_)______\n            \"  \"  \"\n")
 print("Thank you for flying with AMP.")
+
+# start rdf file w/ its associated program
+os.startfile("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.rdf")
