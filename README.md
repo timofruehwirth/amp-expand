@@ -21,3 +21,4 @@ graph TD;
     amp_purchase_agreement/data-->amp_purchase_agreement/data/xml;
     amp_purchase_agreement/data-->amp_purchase_agreement/data/xsl;
 ```
+Created with Mermaid (see [docs](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-diagrams#creating-mermaid-diagrams)).
