@@ -59,7 +59,7 @@ with open("C:/Users/tfruehwirth/Desktop/amp-data/data/ric_metadata/ric_metadata.
             etree.SubElement(record, etree.QName(nsmap["rico"], "hasOrHadName")).text = document_object.doc_title
         if document_object.doc_date != "":
             etree.SubElement(record, etree.QName(nsmap["rico"], "isAssociatedWithDate")).text = document_object.doc_date
-        if document_object.doc_author_01 != "":
+        if document_object.doc_author_01 != "":  # ATTENTION: PROBLEM WITH OTHER STRING FORMATS, SEE DOC0049; FIND ALTERNATIVE SOLUTION
             # partition author name string for surnames plus first-name initials
             doc_author_01_abbr = document_object.doc_author_01.partition(',')
             etree.SubElement(record, etree.QName(nsmap["rico"], "hasAuthor")).text = "https://amp.acdh.oeaw.ac.at/" + doc_author_01_abbr[0].lower() + "_" + doc_author_01_abbr[2][1].lower() + ".html"
